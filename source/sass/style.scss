@@ -1,0 +1,13 @@
+@import "normalize.scss";
+@import "variables";
+@import "fonts";
+@import "mixin";
+// @import "libs";
+@import "scaffolding";
+
+@import "blocks/header.scss";
+@import "blocks/lang-change.scss";
+@import "blocks/navigation.scss";
+@import "blocks/categories-menu.scss";
+
+@import "blocks/footer.scss";

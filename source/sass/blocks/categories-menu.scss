@@ -1,0 +1,27 @@
+.categories-menu {
+   background-color: #2f3640; 
+}
+
+.categories-menu__list {
+    display: flex;
+    @include reset-list;
+
+    li {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    }
+}
+
+.categories-menu__link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 100%;
+    padding: 17px 0;
+    text-align: center;
+    &:hover {
+        background-color: red;
+    }
+
+}
