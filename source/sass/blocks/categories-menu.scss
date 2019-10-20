@@ -2,7 +2,7 @@
    background-color: #2f3640; 
 }
 
-.categories-menu__list {
+.categories-menu__list-inner {
     display: flex;
     @include reset-list;
 
@@ -22,6 +22,9 @@
     text-align: center;
     &:hover {
         background-color: red;
+    }
+    &--tablet {
+      display: none;
     }
 
 }
