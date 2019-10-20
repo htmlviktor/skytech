@@ -4,6 +4,9 @@
 
     li {
         margin-left: 20px;
+        &:nth-child(1) {
+            margin-left: 0;
+        }
     }
 
 }
@@ -14,5 +17,18 @@
     &--super {
         font-weight: bold;
         color: #00dfc8;
+    }
+}
+
+
+@media (max-width: $desktop-width) {
+    .navigation__link {
+        font-size: 14px;
+        color: #ffffff;
+    }
+    .navigation__list {
+        li {
+            flex-grow: 1;
+        }
     }
 }

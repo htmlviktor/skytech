@@ -4,6 +4,8 @@
 
 	display: flex;
 	align-items: center;
+
+	position: relative;
 }
 
 .header__phone {
@@ -35,5 +37,16 @@
 
 	a {
 		margin-left: 30px;
+	}
+}
+
+@media (max-width: $desktop-width) {
+	.header__navigation {
+		position: absolute;
+		bottom: -31px;
+		right: 0;
+		z-index: 1;
+
+		width: 575px;
 	}
 }

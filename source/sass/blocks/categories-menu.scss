@@ -2,6 +2,11 @@
    background-color: #2f3640; 
 }
 
+.categories-menu__list {
+  @include reset-list;
+  position: relative;
+}
+
 .categories-menu__list-inner {
     display: flex;
     @include reset-list;
@@ -21,10 +26,24 @@
     padding: 17px 0;
     text-align: center;
     &:hover {
-        background-color: red;
+        background-color: grey;
+        color: #ffffff;
     }
     &--tablet {
+      width: 153px;
       display: none;
+      background-color: #00dfc8;
+      color: #2f3640;
     }
 
+}
+
+@media (max-width: $desktop-width) {
+  .categories-menu__link--tablet {
+    display: block;
+    width: 153px;
+  }
+  .categories-menu__list-inner {
+    display: none;
+  }
 }
