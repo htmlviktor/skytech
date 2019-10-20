@@ -1,9 +1,39 @@
 .modal-category {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 50px;
-    background: #ffffff;
-    display: none;
-    box-shadow: 0 2px 26px -13px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  background: #ffffff;
+  display: none;
+  padding: 35px 25px;
+  box-shadow: 0 2px 26px -13px rgba(0, 0, 0, 0.5);
+
+  flex-wrap: wrap;
+}
+
+.modal-category__item {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.modal-category__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.modal-category__list {
+  @include reset-list;
+}
+
+.modal-category__sub-link {
+  font-size: 14px;
+  line-height: 2;
+}
+
+@media (max-width: $desktop-width) {
+    .modal-category {
+        width: 128%;
+        left: 100%;
+        background: #f2f4f6;
+    }
 }

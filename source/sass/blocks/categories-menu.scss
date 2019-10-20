@@ -13,6 +13,7 @@
 
 .categories-menu__list-inner {
   display: flex;
+  box-shadow: 0 2px 26px -13px rgba(0, 0, 0, 0.5);
   @include reset-list;
   position: relative;
   & > li {
@@ -23,9 +24,10 @@
     @media (min-width: $desktop-width) {
       &:hover {
         & > .categories-menu__modal {
-          display: block;
+          display: flex;
         }
         .categories-menu__link {
+          color: #00dfc8;
           position: relative;
           &::before {
             content: "";
@@ -50,12 +52,6 @@
   width: 100%;
   padding: 17px 0;
   text-align: center;
-  @media (min-width: $desktop-width) {
-    &:hover {
-      color: #00dfc8;
-    }
-  }
-
   &--tablet {
     width: 153px;
     display: none;
@@ -136,6 +132,7 @@
   }
 
   .categories-menu__list-inner {
+    box-shadow: none;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 10px;
