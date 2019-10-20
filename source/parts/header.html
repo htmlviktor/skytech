@@ -1,47 +1,69 @@
 <header class="header">
-	<div class="container header__wrapper">
-		<a href="/" class="logo"><img src="img/logo.png" alt="" class="header__logo"></a>
-		<div class="header__phone">
-			<a href="tel:+380931702222" class="header__phone-number">+38 (093) 170 22 22</a>
-			<a href="tel:+380931702222" class="header__phone-number">+38 (097) 731 11 00</a>
-		</div>
-		<nav class="navigation header__navigation">
-			<ul class="navigation__list">
-				<li><a href="" class="navigation__link">Новости</a></li>
-				<li><a href="" class="navigation__link navigation__link--super">Акции</a></li>
-				<li><a href="" class="navigation__link">О нас</a></li>
-				<li><a href="" class="navigation__link">Оплата</a></li>
-				<li><a href="" class="navigation__link">Доставка</a></li>
-				<li><a href="" class="navigation__link">Контакты</a></li>
-			</ul>
-		</nav>
-		<div class="lang-change header__lang">
-			<span class="header__lang-rus">rus</span>
-				
-			<span class="header__lang-ua">ua</span>
-		</div>
-		<div class="header__addition">
-			<a href="" class="header__favorites">
-				<span class="visually-hidden">Избранное</span>
-				<svg width="22" height="19">
-					<use xlink:href="#favorites"/>
-				</svg>
-			</a>
-			<a href="" class="header__search">
-				<span class="visually-hidden">Поиск</span>
-				<svg width="19" height="19">
-						<use xlink:href="#Search"/>
-				</svg>
-			</a>	
+	<div class="header__wrapper-bg">
+		<div class="container header__wrapper ">
+			<a href="/" class="logo"><img src="img/logo.png" alt="" class="header__logo"></a>
+			<div class="header__phone">
+				<a href="tel:+380931702222" class="header__phone-number header__phone-number--current">+38 (093) 170 22
+					22</a>
+				<a href="tel:+380931702222" class="header__phone-number">+38 (097) 731 11 00</a>
+			</div>
+			<nav class="navigation header__navigation">
+				<ul class="navigation__list">
+					<li><a href="" class="navigation__link">Новости</a></li>
+					<li><a href="" class="navigation__link navigation__link--super">Акции</a></li>
+					<li><a href="" class="navigation__link">О нас</a></li>
+					<li><a href="" class="navigation__link">Оплата</a></li>
+					<li><a href="" class="navigation__link">Доставка</a></li>
+					<li><a href="" class="navigation__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="lang-change header__lang">
+				<span class="header__lang-rus">rus</span>
+
+				<span class="header__lang-ua">ua</span>
+			</div>
+			<div class="header__addition">
+				<a href="" class="header__favorites">
+					<span class="visually-hidden">Избранное</span>
+					<svg width="22" height="19">
+						<use xlink:href="#favorites" />
+					</svg>
+				</a>
+				<a href="" class="header__search">
+					<span class="visually-hidden">Поиск</span>
+					<svg width="19" height="19">
+						<use xlink:href="#search" />
+					</svg>
+				</a>
+			</div>
+			<button class="menu-controll" type="button" title="Главное меню">
+				<span></span>
+			</button>
 		</div>
 	</div>
 	<div class="categories-menu header__bottom-menu">
 		<div class="container">
 			<ul class="categories-menu__list">
 				<li class="categories-menu__tablet-wrap">
-					<a href="" class="categories-menu__link categories-menu__link--tablet">Категории</a>
-					<ul class="categories-menu__list-inner">
-						<li><a href="" class="categories-menu__link">Упаковочные материалы</a></li>
+					<a href=""
+						class="categories-menu__link categories-menu__link--tablet categories-menu__link--mobile">Категории</a>
+					<ul class="categories-menu__list-inner ">
+						<li><a href="" class="categories-menu__link categories-menu__link--active">Упаковочные материалы</a>
+							<div class="categories-menu__modal modal-category">
+								<div class="modal-category__item">
+									<h4 class="modal-category__title">
+										<a href="" class="modal-category__link">Упаковочная клейкая лента</a>
+										<ul class="modal-category__list">
+											<li><a href="" class="modal-category__sub-link">Пломбированный скотч</a></li>
+											<li><a href="" class="modal-category__sub-link">Скотч с логотипом</a></li>
+											<li><a href="" class="modal-category__sub-link">Скотч брендированный</a></li>
+											<li><a href="" class="modal-category__sub-link">Лента сигнальная</a></li>
+											<li><a href="" class="modal-category__sub-link">Скотч армированный</a></li>
+										</ul>
+									</h4>
+								</div>
+							</div>
+						</li>
 						<li><a href="" class="categories-menu__link">Промышленные материалы</a></li>
 						<li><a href="" class="categories-menu__link">Сельхоз продукция</a></li>
 						<li><a href="" class="categories-menu__link">Оборудование</a></li>
@@ -50,14 +72,24 @@
 						<li><a href="" class="categories-menu__link">Стелажи</a></li>
 					</ul>
 				</li>
-				<!-- <li><a href="" class="categories-menu__link">Упаковочные материалы</a></li>
-				<li><a href="" class="categories-menu__link">Промышленные материалы</a></li>
-				<li><a href="" class="categories-menu__link">Сельхоз продукция</a></li>
-				<li><a href="" class="categories-menu__link">Оборудование</a></li>
-				<li><a href="" class="categories-menu__link">Емкости из пластика</a></li>
-				<li><a href="" class="categories-menu__link">Складская техника</a></li>
-				<li><a href="" class="categories-menu__link">Стелажи</a></li> -->
-			</ul> 
+				<li class="mobile-menu">
+					<nav class="mobile-menu__navigation">
+						<ul class="mobile-menu__list">
+							<li><a href="" class="mobile-menu__link">Новости</a></li>
+							<li><a href="" class="mobile-menu__link mobile-menu__link--super">Акции</a></li>
+							<li><a href="" class="mobile-menu__link">О нас</a></li>
+							<li><a href="" class="mobile-menu__link">Оплата</a></li>
+							<li><a href="" class="mobile-menu__link">Доставка</a></li>
+							<li><a href="" class="mobile-menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</li>
+			</ul>
+			<div class="lang-change header__lang--mobile">
+				<span class="header__lang-rus">rus</span>
+
+				<span class="header__lang-ua">ua</span>
+			</div>
 		</div>
 	</div>
 </header>

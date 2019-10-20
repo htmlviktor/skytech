@@ -1,0 +1,27 @@
+.mobile-menu {
+  display: none;
+  margin-top: 15px;
+}
+
+.mobile-menu__list {
+  @include reset-list;
+}
+
+.mobile-menu__link {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  border-bottom: 1px solid #dfdfdf;
+
+  margin-bottom: 20px;
+
+  &--super {
+      color: #00dfc8;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .mobile-menu {
+    display: block;
+  }
+}
