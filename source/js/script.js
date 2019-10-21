@@ -15,11 +15,13 @@ category.addEventListener('click', (evt) => {
     categoryMenu.classList.toggle('categories-menu__list-inner--open');
 })
 
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 7,
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
+// var swiper = new Swiper('.swiper-container', {
+//     slidesPerView: ,
+//     loop: true,
+//     spaceBetween: 20,
+//     centeredSlides: true,
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//     },
+//   });

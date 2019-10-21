@@ -16,27 +16,27 @@
     
 }
 
-.bestsellers__mask {
-    position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 16%;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 16%;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-  }
-}
+// .bestsellers__mask {
+//     position: relative;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     height: 100%;
+//     width: 300px;
+//     left: 0;
+//     background-color: rgba(255, 255, 255, 0.6);
+//     z-index: 10;
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     height: 100%;
+//     width: 300px;
+//     right: 0;
+//     background-color: rgba(255, 255, 255, 0.);
+//     z-index: 10;
+//   }
+// }
 
 
 
