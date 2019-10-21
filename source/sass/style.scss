@@ -1,8 +1,9 @@
+@import "libs/swiper.min.scss";
 @import "normalize.scss";
 @import "variables";
 @import "fonts";
 @import "mixin";
-// @import "libs";
+@import "libs";
 @import "scaffolding";
 
 @import "blocks/header.scss";
@@ -12,5 +13,9 @@
 @import "blocks/mobile-menu.scss";
 @import "blocks/menu-controll.scss";
 @import "blocks/modal-category.scss";
+@import "blocks/main-slider.scss";
+@import "blocks/button.scss";
+@import "blocks/bestsellers.scss";
+@import "blocks/card.scss";
 
 @import "blocks/footer.scss";

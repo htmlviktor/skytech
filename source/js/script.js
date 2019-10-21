@@ -14,3 +14,12 @@ category.addEventListener('click', (evt) => {
     evt.preventDefault();
     categoryMenu.classList.toggle('categories-menu__list-inner--open');
 })
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 7,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });

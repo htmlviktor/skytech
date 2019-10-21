@@ -35,5 +35,8 @@
     "build": "gulp build",
     "start": "gulp start"
   },
-  "version": "16.0.0"
+  "version": "16.0.0",
+  "dependencies": {
+    "swiper": "^5.1.0"
+  }
 }

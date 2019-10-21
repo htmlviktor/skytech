@@ -1,0 +1,42 @@
+.bestsellers {
+    overflow-x: hidden;
+}
+
+.bestsellers__link {
+    padding: 12px 40px 12px 17px;
+}
+
+.bestsellers__title {
+    @include title;
+}
+
+.bestsellers__slider {
+    @include reset-list;
+    display: flex;
+    
+}
+
+.bestsellers__mask {
+    position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 16%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 16%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+  }
+}
+
+
+

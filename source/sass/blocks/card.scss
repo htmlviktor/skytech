@@ -1,0 +1,46 @@
+.card {
+  min-height: 305px;
+  width: 280px;
+  border: solid 1px #d4dade;
+  border-radius: 4px;
+
+  position: relative;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__price {
+  margin: 0;
+}
+
+.card__more {
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  padding: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card__title-link {
+  font-size: 18px;
+}
+
+.card__price {
+  font-size: 16px;
+  color: #8a95a4;
+}
+
+.card__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.card__info {
+  margin-top: 25px;
+}
+
