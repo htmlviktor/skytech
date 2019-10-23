@@ -28,4 +28,18 @@ const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
     slidesPerView: 2,
     slidesPerColumn: 2,
     spaceBetween: 30,
+    navigation: {
+        nextEl: '.special-offer__btn--next',
+        prevEl: '.special-offer__btn--prev',
+      },
+})
+
+const reviewsSlider = new Swiper('.reviews__slider', {
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 30,
+     navigation: {
+        nextEl: '.reviews__btn--next',
+        prevEl: '.reviews__btn--prev',
+      },
 })
