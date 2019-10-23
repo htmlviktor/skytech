@@ -25,6 +25,7 @@
       &:hover {
         & > .categories-menu__modal {
           display: flex;
+          z-index: 10;
         }
         .categories-menu__link {
           color: #00dfc8;

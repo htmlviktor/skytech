@@ -1,0 +1,29 @@
+.form-promo {
+    max-width: 425px;
+}
+
+.form-promo__input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: 1px solid #848f9f;
+    border-radius: 4px;
+    padding-left: 20px;
+
+    color: black;
+    font-weight: 700;
+}
+
+.form-promo__input::placeholder {
+    font-weight: 400;
+}
+
+
+.form-promo__wrapper {
+    margin-bottom: 15px;
+}
+
+.form-promo__button {
+    width: 100%;
+    padding: 20px 0;
+}

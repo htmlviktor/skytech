@@ -15,13 +15,17 @@ category.addEventListener('click', (evt) => {
     categoryMenu.classList.toggle('categories-menu__list-inner--open');
 })
 
-// var swiper = new Swiper('.swiper-container', {
-//     slidesPerView: ,
-//     loop: true,
-//     spaceBetween: 20,
-//     centeredSlides: true,
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//     },
-//   });
+const swiper = new Swiper('.bestsellers__slider', {
+    slidesPerView: 6.2,
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    slidesOffsetBefore: 200,
+    slidesOffsetAfter: 200,
+});
+
+const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
+    slidesPerView: 2,
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+})

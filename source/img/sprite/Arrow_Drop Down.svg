@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Arrow_Drop Down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Arrow_Drop-Down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-point-to-right" transform="translate(4.000000, 2.200000) rotate(90.000000) translate(-4.000000, -2.200000) translate(2.000000, -1.000000)" fill="#848F9F" fill-rule="nonzero">
+            <path d="M3.85608544,3.51683291 L0.83884932,6.2686458 C0.646916657,6.44378473 0.335730745,6.44378473 0.14389126,6.2686458 C-0.0479637535,6.09366268 -0.0479637535,5.80985688 0.14389126,5.63488792 L2.81367941,3.19995397 L0.143968909,0.765105002 C-0.0478861045,0.590051057 -0.0478861045,0.306273584 0.143968909,0.131290459 C0.335823923,-0.0437634863 0.646994306,-0.0437634863 0.838926969,0.131290459 L3.85616309,2.88314584 C3.9520906,2.9706799 4,3.08528152 4,3.1999398 C4,3.31465474 3.95199742,3.42934135 3.85608544,3.51683291 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

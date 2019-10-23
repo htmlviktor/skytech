@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Arrow_News</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Arrow_News" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic-arrows-04" transform="translate(9.000000, 6.000000) rotate(90.000000) translate(-9.000000, -6.000000) translate(3.000000, -3.000000)" fill="#C2C8D0" fill-rule="nonzero">
+            <path d="M2.41,5.63 L4.78,3.73 L4.78,16.47 C4.78,17.0222847 5.22771525,17.47 5.78,17.47 C6.33228475,17.47 6.78,17.0222847 6.78,16.47 L6.78,3.38 L9.59,5.63 C9.79784463,5.7966477 10.063593,5.87347345 10.3282977,5.84343603 C10.5930024,5.81339862 10.8347799,5.67898129 11,5.47 C11.3403569,5.03863007 11.2689082,4.41345392 10.84,4.07 L6.75,0.79 C6.31160064,0.4389996 5.68839936,0.4389996 5.25,0.79 L1.16,4.07 C0.731091822,4.41345392 0.659643119,5.03863007 1,5.47 C1.16522006,5.67898129 1.40699755,5.81339862 1.67170229,5.84343603 C1.93640703,5.87347345 2.20215537,5.7966477 2.41,5.63 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
