@@ -103,6 +103,7 @@ gulp.task("compress", function() {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
+      "source/libs/css/*.css",
       "source/img/**",
       "source/js/**",
       "source/*.ico"
