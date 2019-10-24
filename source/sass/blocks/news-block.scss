@@ -5,6 +5,8 @@
 
 .news-block__list {
   @include reset-list;
+  display: flex;
+  justify-content: space-between;
 }
 
 .news-block__title-wrapper {
@@ -21,6 +23,7 @@
 .news-block__item {
   border-top: solid 1px #2f3640;
   padding-top: 20px;
+  width: 30%;
 }
 
 .news-block__item-text {

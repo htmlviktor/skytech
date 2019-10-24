@@ -5,7 +5,7 @@
 }
 
 .form-one__form {
-    margin-left: 40px;
+    margin-left: 120px;
 }
 
 .form-one__title-wrap {
@@ -21,6 +21,7 @@
 .form-one__wrapper {
     position: relative;
     padding: 80px 0;
+    display: flex;
     align-items: center;
     &::before {
         content: "";

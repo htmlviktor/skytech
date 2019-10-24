@@ -16,12 +16,12 @@ category.addEventListener('click', (evt) => {
 })
 
 const swiper = new Swiper('.bestsellers__slider', {
-    slidesPerView: 6.2,
+    slidesPerView: 6,
     loop: true,
     spaceBetween: 30,
-    centeredSlides: true,
-    slidesOffsetBefore: 200,
-    slidesOffsetAfter: 200,
+    // centeredSlides: true,
+    // slidesOffsetBefore: 200,
+    // slidesOffsetAfter: 200,
 });
 
 const swiperTwo = new Swiper('.special-offer__slider-inizialize', {

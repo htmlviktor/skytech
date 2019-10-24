@@ -2,6 +2,10 @@
     margin-top: 130px;
 }
 
+.special-offer__main-wrapper {
+    display: flex;
+}
+
 .special-offer__list {
     @include reset-list;
     justify-content: space-between;
@@ -22,4 +26,5 @@
 
 .special-offer__slider {
     height: 680px;
+    max-width: 608px;
 }

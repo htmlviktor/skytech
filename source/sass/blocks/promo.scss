@@ -1,9 +1,10 @@
-.promo {
+.promo__wrapper {
     margin-top: 100px;
-    padding: 50px 0;
+    padding: 50px 120px;
     position: relative;
     border: solid 1px #d4dade;
-
+    display: flex;
+    flex-direction: row-reverse;
     &:before {
         content: "";
         width: 347px;
