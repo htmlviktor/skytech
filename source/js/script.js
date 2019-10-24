@@ -53,3 +53,10 @@ const aboutCompanySlider = new Swiper('.about-company__slider', {
         prevEl: '.about-company__btn--prev',
       },
 })
+
+const employersSlider = new Swiper('.employers__slider', {
+    slidesPerView: 5.3,
+    loop: true,
+    spaceBetween: 20,
+    centeredSlides: true,
+})

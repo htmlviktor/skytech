@@ -1,0 +1,11 @@
+.partners__list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.partners__item {
+    max-width: 130px;
+    display: flex;
+}
