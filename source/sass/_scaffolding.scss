@@ -9,6 +9,8 @@ body {
   color: $main-color-text;
 
   background-color: #ffffff;
+
+  overflow-x: hidden;
 }
 
 html { box-sizing: border-box; }

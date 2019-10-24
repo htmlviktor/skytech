@@ -1,0 +1,53 @@
+.features {
+  border-top: 2px solid #d4dade;
+  margin-top: 150px;
+}
+
+.features__list {
+  @include reset-list;
+  display: flex;
+}
+
+.features__item {
+  max-width: 200px;
+  margin-left: 80px;
+  position: relative;
+  padding-top: 20px;
+
+  &:nth-child(1) {
+      margin-left: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    border: solid 3px #00dfc8;
+    border-radius: 4px;
+    top: -4px;
+  }
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--time::after {
+      background-image: url("../img/sprite/stock.svg");
+  }
+
+  &--quality::after {
+      background-image: url("../img/sprite/shield (1).svg");
+  }
+  &--sales::after {
+    background-image: url("../img/sprite/history.svg");
+  }
+  &--feedback::after {
+    background-image: url("../img/sprite/chat.svg");
+  }
+}

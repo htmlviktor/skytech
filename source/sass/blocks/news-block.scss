@@ -1,0 +1,29 @@
+.news-block {
+  background-color: #f2f4f6;
+  padding: 80px;
+}
+
+.news-block__list {
+  @include reset-list;
+}
+
+.news-block__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.news-block__link {
+  padding: 15px 30px;
+}
+
+.news-block__item {
+  border-top: solid 1px #2f3640;
+  padding-top: 20px;
+}
+
+.news-block__item-text {
+  font-size: 18px;
+  font-weight: 500;
+}

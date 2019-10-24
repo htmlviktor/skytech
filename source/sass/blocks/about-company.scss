@@ -1,0 +1,49 @@
+.about-company {
+  padding: 150px 0;
+  background-color: #f2f4f6;
+}
+
+.about-company__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-company__info-wrapper {
+    max-width: 390px;
+}
+
+.about-company__descript {
+  color: #848f9f;
+  line-height: 1.5;
+}
+
+.about-company__slider {
+  position: absolute;
+  height: 340px;
+  clip: rect(0px, 1400px, auto, 0px);
+  &.swiper-container {
+      overflow: initial;
+  }
+}
+
+.about-company__slider-wrapper {
+  position: relative;
+  width: 800px;
+  height: 340px;
+  padding-left: 80px;
+}
+
+.about-company__controlls {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 80px;
+
+  display: flex;
+}
+
+.about-company__btn {
+  border: none;
+  background: #f2f4f6;
+  padding: 25px;
+}

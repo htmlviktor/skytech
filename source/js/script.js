@@ -32,7 +32,7 @@ const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
         nextEl: '.special-offer__btn--next',
         prevEl: '.special-offer__btn--prev',
       },
-})
+});
 
 const reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 3,
@@ -41,5 +41,15 @@ const reviewsSlider = new Swiper('.reviews__slider', {
      navigation: {
         nextEl: '.reviews__btn--next',
         prevEl: '.reviews__btn--prev',
+      },
+});
+
+const aboutCompanySlider = new Swiper('.about-company__slider', {
+    slidesPerView: 'auto',
+    spaceBetween: -80,
+    loop: true,
+    navigation: {
+        nextEl: '.about-company__btn--next',
+        prevEl: '.about-company__btn--prev',
       },
 })
