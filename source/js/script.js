@@ -16,32 +16,65 @@ category.addEventListener('click', (evt) => {
 })
 
 const swiper = new Swiper('.bestsellers__slider', {
-    slidesPerView: 6,
-    loop: true,
-    spaceBetween: 30,
-    // centeredSlides: true,
-    // slidesOffsetBefore: 200,
-    // slidesOffsetAfter: 200,
+    // loop: true,
+    breakpoints: {
+        1440: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        },
+        1100: {
+            slidesPerView: 4.6,
+            spaceBetween: 20,
+        },
+        760: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        }
+
+    }
 });
 
 const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
     slidesPerView: 2,
-    slidesPerColumn: 2,
+    slidesPerColumn: 1,
     spaceBetween: 30,
     navigation: {
         nextEl: '.special-offer__btn--next',
         prevEl: '.special-offer__btn--prev',
-      },
+    },
+    breakpoints: {
+        1440: {
+            spaceBetween: 30,
+            slidesPerColumn: 2
+        },
+        1100: {
+            slidesPerView: 2,
+        },
+        760: {
+            slidesPerView: 2.5,
+        }
+    }
 });
 
 const reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 3,
     loop: true,
     spaceBetween: 30,
-     navigation: {
+    navigation: {
         nextEl: '.reviews__btn--next',
         prevEl: '.reviews__btn--prev',
-      },
+    },
+    breakpoints: {
+        1400: {
+            slidesPerView: 3,
+        }, 
+        1100: {
+            slidesPerView: 3,
+        },
+        760: {
+            slidesPerView: 1.8
+        }
+    }
 });
 
 const aboutCompanySlider = new Swiper('.about-company__slider', {
@@ -51,12 +84,22 @@ const aboutCompanySlider = new Swiper('.about-company__slider', {
     navigation: {
         nextEl: '.about-company__btn--next',
         prevEl: '.about-company__btn--prev',
-      },
+    },
 })
 
 const employersSlider = new Swiper('.employers__slider', {
     slidesPerView: 5.3,
     loop: true,
     spaceBetween: 20,
-    centeredSlides: true,
+    breakpoints: {
+        1400: {
+            slidesPerView: 5.3,
+        },
+        1100: {
+            slidesPerView: 4.7,
+        },
+        760: {
+            slidesPerView: 1.8,
+        }
+    }
 })

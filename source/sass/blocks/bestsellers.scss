@@ -31,6 +31,7 @@
     top: 0;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 10;
+    display: block;
   }
   &::after {
     content: "";
@@ -41,5 +42,23 @@
     top: 0;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 10;
+    display: block;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .bestsellers__mask {
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .bestsellers {
+    margin-top: 50px;
   }
 }

@@ -49,3 +49,27 @@
   font-size: 18px;
   color: #1a2026;
 }
+
+@media (max-width: $desktop-width) {
+  .employers__descript {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .employers {
+    padding: 65px 0;
+  }
+  .employers__title {
+    text-align: left;
+  }
+  .employers__descript {
+    max-width: 37%;
+    &:last-child {
+      margin-left: 30px;
+    }
+  }
+  .employers__text-wrap {
+    justify-content: flex-start;
+  }
+}

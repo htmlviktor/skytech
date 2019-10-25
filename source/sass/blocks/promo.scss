@@ -21,3 +21,16 @@
     margin-top: 15px;
     display: inline-flex;
 }
+
+
+@media (max-width: $laptop-width) {
+    .promo__wrapper {
+        padding: 50px 20px;
+
+        &::before {
+            transform: rotate(70deg);
+            left: -90px;
+            top: -70px;
+        }
+    }
+}

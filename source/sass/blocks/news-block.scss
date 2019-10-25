@@ -30,3 +30,13 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+
+@media (max-width: $desktop-width) {
+  .news-block__item-text {
+    font-size: 16px;
+  }
+  .news-block {
+    padding: 60px 80px;
+  }
+}

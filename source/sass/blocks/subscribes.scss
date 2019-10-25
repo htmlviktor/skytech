@@ -59,3 +59,18 @@
     display: inline-flex;
 }
 
+@media (max-width: $desktop-width) {
+  .subscribes {
+    padding: 67px 0;
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .subscribes__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .subscribes__social {
+    margin-top: 45px;
+  }
+}

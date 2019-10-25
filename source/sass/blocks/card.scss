@@ -8,6 +8,13 @@
   &--big {
     height: 680px;
     width: 580px;
+    @media (max-width: $desktop-width) {
+      height: 320px;
+      width: 48%;
+    }
+    @media (max-width: $laptop-width) {
+      width: 100%;
+    }
   }
   
   &.swiper-slide {

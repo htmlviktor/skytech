@@ -47,3 +47,35 @@
   background: #f2f4f6;
   padding: 25px;
 }
+
+@media (max-width: $desktop-width) {
+  .about-company__descript {
+    font-size: 14px;
+  }
+  .about-company {
+    padding: 95px 0;
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .about-company {
+    padding: 40px 0;
+  }
+  .about-company__wrapper {
+    flex-direction: column;
+  }
+  .about-company__slider-wrapper {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 25px;
+  }
+  .about-company__slider {
+    position: initial;
+    &.swiper-container {
+      overflow: hidden;
+    }
+  }
+  .about-company__controlls {
+    left: 0;
+  }
+}

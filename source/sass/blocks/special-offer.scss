@@ -28,3 +28,25 @@
     height: 680px;
     max-width: 608px;
 }
+
+@media (max-width: $desktop-width) {
+    .special-offer__slider {
+        max-width: 48%;
+        height: 320px;
+    }
+    .special-offer {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: $laptop-width) {
+    .special-offer__main-wrapper {
+        flex-direction: column;
+    }
+    .special-offer__slider {
+        max-width: 100%;
+    }
+    .special-offer__slider {
+        margin-top: 15px;
+    }
+}

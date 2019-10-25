@@ -21,7 +21,7 @@
     justify-content: center;
     flex-grow: 1;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       &:hover {
         & > .categories-menu__modal {
           display: flex;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $laptop-width) {
   .categories-menu__link {
     color: #1a2026;
     width: 300px;
