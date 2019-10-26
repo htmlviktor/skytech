@@ -8,6 +8,7 @@
   font-size: 0;
   border: none;
   background: transparent;
+  padding: 14px;
 }
 
 .reviews__wrapper {
@@ -55,6 +56,21 @@
   line-height: 1.5;
 }
 
+.reviews__controls {
+  position: relative;
+  &::before {
+    content: "";
+    width: 1px;
+    height: 24px;
+    position: absolute;
+    display: block;
+    background-color: black;
+    opacity: 0.1;
+    left: 49%;
+    top: 13px;
+  }
+}
+
 @media (max-width: $desktop-width) {
   .reviews {
     padding: 5px 0 50px;
@@ -64,5 +80,19 @@
   }
   .reviews__item-wrap {
     font-size: 15px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .reviews__item-text {
+    margin: 0;
+    color: #2f3640;
+  }
+  .reviews__item {
+    padding: 20px;
+  }
+  .reviews__item-info {
+    margin-top: 10px;
   }
 }

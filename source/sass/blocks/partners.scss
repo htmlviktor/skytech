@@ -1,22 +1,22 @@
 .partners__list {
-    @include reset-list;
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 0;
+  @include reset-list;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 100px 0;
 }
 
 .partners__item {
-    max-width: 130px;
-    display: flex;
+  max-width: 130px;
+  display: flex;
 }
 
 @media (max-width: $laptop-width) {
-    .partners__list {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding: 40px 0 70px;
-    }
-    .partners__item {
-        margin-top: 30px;
-    }
+  .partners__list {
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
+    padding: 40px 0 70px;
+  }
+  .partners__item {
+    margin-top: 30px;
+  }
 }

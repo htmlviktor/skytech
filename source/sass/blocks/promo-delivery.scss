@@ -1,6 +1,6 @@
 .promo-delivery {
   padding: 140px 0;
-  background-image: url("../img/promo/BG.png");
+  background-image: url("../img/promo/lenta-big.png");
   background-repeat: no-repeat;
   background-position-x: -90px;
 }
@@ -31,4 +31,15 @@
     .promo-delivery__info {
         max-width: 260px;
     }
+}
+
+@media (max-width: $tablet-width) {
+  .promo-delivery {
+    background-image: url("../img/promo/mobile/bg.png");
+    background-position: 100% 0;
+  }
+  .promo-delivery__wrapper {
+    flex-direction: row;
+    padding-top: 170px;
+  }
 }

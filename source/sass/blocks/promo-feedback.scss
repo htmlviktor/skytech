@@ -1,6 +1,6 @@
 .promo-feedback__wrapper {
   padding: 100px 0;
-  background-image: url("../img/promo/Img.png");
+  background-image: url("../img/promo/promo-man.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
 }
@@ -19,11 +19,11 @@
 }
 
 @media (max-width: $desktop-width) {
-//   .promo-feedback__wrapper {
-//     padding: 78px 20px;
-//     background-position-x: 162%;
-//     background-size: contain;
-//   }
+  //   .promo-feedback__wrapper {
+  //     padding: 78px 20px;
+  //     background-position-x: 162%;
+  //     background-size: contain;
+  //   }
 }
 
 @media (max-width: $laptop-width) {
@@ -37,3 +37,15 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .promo-feedback__wrapper {
+    background-image: none;
+    padding: 40px 20px;
+  }
+  .promo-feedback__form {
+    max-width: 100%;
+  }
+  .promo-feedback__descript {
+    font-size: 18px;
+  }
+}

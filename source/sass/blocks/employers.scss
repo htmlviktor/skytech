@@ -34,8 +34,8 @@
 }
 
 .employers__info {
-    padding-top: 30px;
-    padding-left: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -48,6 +48,24 @@
 .employer__name {
   font-size: 18px;
   color: #1a2026;
+  font-weight: 700;
+}
+
+.employer__link {
+  border-radius: 4px;
+  border: solid 1px #ced6e1;
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(2) {
+    margin-left: 5px;
+  }
+}
+.employers__links {
+  margin-top: 20px;
 }
 
 @media (max-width: $desktop-width) {
@@ -71,5 +89,19 @@
   }
   .employers__text-wrap {
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .employers__text-wrap {
+    flex-wrap: wrap;
+  }
+  .employers__descript {
+    max-width: 100%;
+    font-size: 16px;
+    margin-top: 0;
+    &:nth-child(2) {
+      margin-left: 0;
+    }
   }
 }

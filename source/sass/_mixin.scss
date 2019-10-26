@@ -32,6 +32,9 @@
 	@media (max-width: $desktop-width) {
 		font-size: 35px;
 	}
+	@media (max-width: $tablet-width) {
+		font-size: 30px;
+	}
 }
 
 

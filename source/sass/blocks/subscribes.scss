@@ -72,5 +72,26 @@
   }
   .subscribes__social {
     margin-top: 45px;
+    width: 80%;
+  }
+  .subscribes__form {
+    width: auto;
+  }
+  .subscribes__form-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .subscribes__form-wrapper {
+    width: 100%;
+  }
+  .subscribes__form-submit {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .subscribes__social {
+    width: 100%;
   }
 }

@@ -92,6 +92,7 @@
 
 @media (max-width: $tablet-width) {
   .categories-menu {
+    padding: 20px 0 50px;
     background-color: #ffffff;
     display: none;
     &--open {

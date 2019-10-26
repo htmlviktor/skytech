@@ -79,3 +79,18 @@
     left: 0;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .about-company__descript {
+    font-size: 16px;
+  }
+  .about-company__slider {
+    height: 200px;
+  }
+  .about-company__controlls {
+    display: flex;
+    justify-content: center;
+    position: static;
+    margin-top: 20px;
+  }
+}

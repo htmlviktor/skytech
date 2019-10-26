@@ -14,6 +14,9 @@
 
 .bestsellers__link {
   padding: 12px 40px 12px 17px;
+  &--mobile {
+    display: none;
+  }
 }
 
 .bestsellers__slider {
@@ -46,6 +49,10 @@
   }
 }
 
+.bestellers__wrapper {
+  position: relative;
+}
+
 @media (max-width: $desktop-width) {
   .bestsellers__mask {
     &::before {
@@ -60,5 +67,16 @@
 @media (max-width: $laptop-width) {
   .bestsellers {
     margin-top: 50px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .bestsellers__link {
+    padding: 18px 55px;
+    display: none;
+    margin-top: 40px;
+    &--mobile {
+      display: inline-flex;
+    }
   }
 }

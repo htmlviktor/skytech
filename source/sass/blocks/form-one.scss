@@ -28,7 +28,7 @@
     content: "";
     width: 390px;
     height: 246px;
-    background-image: url("../img/promo/139921249.png");
+    background-image: url("../img/promo/lenta-black.png");
     background-repeat: no-repeat;
 
     position: absolute;
@@ -40,7 +40,7 @@
     content: "";
     width: 306px;
     height: 180px;
-    background-image: url("../img/promo/12619.650.png");
+    background-image: url("../img/promo/lenta.png");
     background-repeat: no-repeat;
 
     position: absolute;
@@ -80,5 +80,14 @@
   }
   .form-one__form {
     margin-left: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form-one {
+    margin-top: 50px;
+  }
+  .form-one__wrapper {
+    width: 100%;
   }
 }

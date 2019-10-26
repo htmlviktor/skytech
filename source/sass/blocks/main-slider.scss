@@ -43,10 +43,25 @@
     background-color: #dfe1e1;
   }
   .main-slider__item-wrapper {
-      flex-direction: column;
+    flex-direction: column;
   }
   .main-slider__item-image {
     width: 90%;
     align-self: flex-end;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-slider__item-wrapper {
+    flex-direction: column-reverse;
+  }
+  .main-slider__item {
+    padding: 20px 0 55px;
+  }
+  .main-title {
+    font-size: 30px;
+  }
+  .main-slider__descript {
+    font-size: 20px;
   }
 }

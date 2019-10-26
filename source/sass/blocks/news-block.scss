@@ -18,6 +18,9 @@
 
 .news-block__link {
   padding: 15px 30px;
+  &--mobile {
+    display: none;
+  }
 }
 
 .news-block__item {
@@ -38,5 +41,29 @@
   }
   .news-block {
     padding: 60px 80px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .news-block {
+    padding: 0;
+  }
+  .news-block__list {
+    flex-wrap: wrap;
+  }
+  .news-block__item {
+    width: 100%;
+  }
+  .news-block__item {
+    padding-bottom: 20px;
+  }
+  .news-block__link {
+    display: none;
+    &--mobile {
+      display: inline-flex;
+    }
+  }
+  .news-block {
+    padding: 0px 0 40px;
   }
 }

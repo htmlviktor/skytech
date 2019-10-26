@@ -1,36 +1,51 @@
 .promo__wrapper {
-    margin-top: 100px;
-    padding: 50px 120px;
-    position: relative;
-    border: solid 1px #d4dade;
-    display: flex;
-    flex-direction: row-reverse;
-    &:before {
-        content: "";
-        width: 347px;
-        height: 356px;
-        position: absolute;
-        left: 100px;
-        top: -45px;
-        background-image: url("../img/promo/Chus-Packaging-1-36-2-e1510776612434.png");
-    }
+  margin-top: 100px;
+  padding: 50px 120px;
+  position: relative;
+  border: solid 1px #d4dade;
+  display: flex;
+  flex-direction: row-reverse;
+  &::before {
+    content: "";
+    width: 347px;
+    height: 356px;
+    position: absolute;
+    left: 100px;
+    top: -45px;
+    background-image: url("../img/promo/packing-skotch.png");
+    background-size: cover;
+  }
 }
 
 .promo__link {
-    padding: 15px 30px;
-    margin-top: 15px;
-    display: inline-flex;
+  padding: 15px 30px;
+  margin-top: 15px;
+  display: inline-flex;
 }
 
-
 @media (max-width: $laptop-width) {
-    .promo__wrapper {
-        padding: 50px 20px;
+  .promo__wrapper {
+    padding: 50px 20px;
 
-        &::before {
-            transform: rotate(70deg);
-            left: -90px;
-            top: -70px;
-        }
+    &::before {
+      transform: rotate(70deg);
+      left: -90px;
+      top: -70px;
     }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    overflow-x: hidden;
+  }
+
+  .promo__wrapper {
+    padding: 280px 20px 30px;
+    &::before {
+      width: 320px;
+      height: 330px;
+      left: 0;
+    }
+  }
 }

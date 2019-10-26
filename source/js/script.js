@@ -16,7 +16,6 @@ category.addEventListener('click', (evt) => {
 })
 
 const swiper = new Swiper('.bestsellers__slider', {
-    // loop: true,
     breakpoints: {
         1440: {
             slidesPerView: 6,
@@ -29,6 +28,12 @@ const swiper = new Swiper('.bestsellers__slider', {
         760: {
             slidesPerView: 2.5,
             spaceBetween: 20,
+        },
+        320: {
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true
         }
 
     }
@@ -52,6 +57,11 @@ const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
         },
         760: {
             slidesPerView: 2.5,
+        },
+        320: {
+            slidesPerView: 1.3,
+            centeredSlides: true,
+            loop: true
         }
     }
 });
@@ -73,6 +83,9 @@ const reviewsSlider = new Swiper('.reviews__slider', {
         },
         760: {
             slidesPerView: 1.8
+        },
+        320: {
+            slidesPerView: 1
         }
     }
 });
@@ -85,6 +98,16 @@ const aboutCompanySlider = new Swiper('.about-company__slider', {
         nextEl: '.about-company__btn--next',
         prevEl: '.about-company__btn--prev',
     },
+    breakpoints: {
+        760: {
+            slidesPerView: 'auto',
+            spaceBetween: -80,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        }
+    }
 })
 
 const employersSlider = new Swiper('.employers__slider', {
@@ -100,6 +123,22 @@ const employersSlider = new Swiper('.employers__slider', {
         },
         760: {
             slidesPerView: 1.8,
+        },
+        320: {
+            slidesPerView: 1
         }
     }
+})
+
+const partnersSlider = new Swiper('.partners__slider', {
+        breakpoints: {
+            320: {
+                slidesPerView: 2.8,
+                centeredSlides: true,
+                loop: true
+            },
+            760: {
+                slidesPerView: 'auto'
+            }
+        }
 })

@@ -35,3 +35,17 @@
     font-size: 14px;
     line-height: 2.14;
 }
+
+
+@media (max-width: $tablet-width) {
+    .footer__wrapper {
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+    .footer__menu-wrapper {
+        width: 100%;
+    }
+    .footer__address-wrap {
+        padding-top: 0;
+    }
+}
