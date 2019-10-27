@@ -77,7 +77,7 @@ const reviewsSlider = new Swiper('.reviews__slider', {
     breakpoints: {
         1400: {
             slidesPerView: 3,
-        }, 
+        },
         1100: {
             slidesPerView: 3,
         },
@@ -131,14 +131,32 @@ const employersSlider = new Swiper('.employers__slider', {
 })
 
 const partnersSlider = new Swiper('.partners__slider', {
-        breakpoints: {
-            320: {
-                slidesPerView: 2.8,
-                centeredSlides: true,
-                loop: true
-            },
-            760: {
-                slidesPerView: 'auto'
-            }
+    breakpoints: {
+        320: {
+            slidesPerView: 2.8,
+            centeredSlides: true,
+            loop: true
+        },
+        760: {
+            slidesPerView: 'auto'
         }
+    }
 })
+
+const galleryThumbSlider = new Swiper('.card-main__gallery-thumbs', {
+    slidesPerView: 4,
+    // freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    spaceBetween: 10,
+});
+
+const gallerySlider = new Swiper('.card-main__gallery-container', {
+    thumbs: {
+        swiper: galleryThumbSlider
+    },
+    navigation: {
+        nextEl: '.card-main__thubmbs-button--next',
+        prevEl: '.card-main__thubmbs-button--prev',
+    },
+});

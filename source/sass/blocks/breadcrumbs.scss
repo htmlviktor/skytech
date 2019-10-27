@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+}
+.breadcrumbs__link {
+  font-size: 12px;
+  color: #848f9f;
+  font-weight: 500;
+  position: relative;
+  margin-right: 30px;
+  &::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-image: url("../img/sprite/arrow-bread-crumbs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -20px;
+    top: calc(50% - 4px);
+  }
+  &:last-child {
+    &::after {
+      content: none;
+    }
+  }
+
+  &--home {
+    font-size: 0;
+    background-image: url("../img/sprite/home.svg");
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+  }
+}
