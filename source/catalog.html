@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Start Template</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально --> 
+    <link rel="stylesheet" href="libs/css/swiper.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+<body>
+  <div style="display:none">
+      <include src="build/img/sprite/sprite.svg"></include>
+  </div>
+  <include src="source/parts/header.html"></include>
+    <main class="main">
+      <include src="source/parts/breadcrumbs.html"></include>
+      <include src="source/parts/catalog-main.html"></include>  
+      <div class="promo-feedback promo-feedback--grey">
+            <div class="container promo-feedback__wrapper">
+                <h2 class="promo-feedback__title sub-title">
+                    Затрудняетесь с выбором материала?
+                </h2>
+                <p class="promo-feedback__descript">
+                    Наши квалифицированные менеджеры оперативно помогут
+                    с выбором необходимого товара
+                </p>
+                <form action="" class="form-promo promo-feedback__form">
+                    <div class="form-promo__wrapper">
+                        <input type="text" class="form-promo__input" placeholder="Имя">
+                    </div>
+                    <div class="form-promo__wrapper">
+                        <input type="text" class="form-promo__input" placeholder="Телефон">
+                    </div>
+                    <button type="submit" class="button form-promo__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <include src="source/parts/partners.html"></include>
+    </main>
+  <include src="source/parts/footer.html"></include>
+  
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

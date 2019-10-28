@@ -1,8 +1,15 @@
+.promo-feedback {
+  &--grey {
+    background-color: #f2f4f6;
+    margin-top: 60px;
+  }
+}
+
 .promo-feedback__wrapper {
   padding: 100px 0;
   background-image: url("../img/promo/promo-man.png");
   background-repeat: no-repeat;
-  background-position-x: 100%;
+  background-position-x: 90%;
 }
 
 .promo-feedback__title {

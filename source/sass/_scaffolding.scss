@@ -48,6 +48,10 @@ img {
   @include title;
 }
 
+.inside-title {
+  @include inside-title;
+}
+
 .container {
   margin: 0 auto;
   max-width: $desktop-width-container;

@@ -1,0 +1,114 @@
+.catalog-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.catalog-main__categories-title {
+    color: #d4dade;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding: 15px 0;
+}
+
+.catalog-main__catagories {
+    width: 30%;
+}
+
+.catalog-main__product-wrapper {
+    width: 70%;
+}
+
+.catalog-main__product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.catalog-main__product-card {
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 22px;
+    flex-grow: 1;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.catalog-main__title {
+    padding: 5px 0;
+    border-bottom: 2px solid #2f3640;
+}
+
+.catalog-main__categories-list {
+    @include reset-list;
+    width: 80%;
+}
+
+.catalog-main__sub-categories-list {
+    @include reset-list;
+    padding: 15px 0px 15px 25px;
+    border-bottom: 2px solid #f2f4f6;
+    margin-bottom: 10px;
+}
+
+.catalog-main__categories-link {
+    font-size: 14px;
+    line-height: 1.93;
+    &--active {
+        background-color: #848f9f;
+        padding: 8px 65px 8px 15px;
+        border-radius: 4px;
+        color: #ffffff;
+    }
+}
+
+.catalog-main__sub-categories-link {
+    font-size: 14px;
+    line-height: 1.93;
+}
+
+.catalog-main__sort-links {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.catalog-main__sort-link {
+    padding: 7px 10px;
+    border: solid 1px #f2f4f6;
+    border-radius: 4px;
+    color: #848f9f;
+    margin-left: 10px;
+    font-size: 14px;
+    &--active {
+        background-color: #848f9f;
+        color: white;
+    }
+}
+
+.catalog__pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.catalog__pagination-link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: #848f9f;
+    padding: 7px 11px;
+    &:first-child {
+        margin-left: auto;
+    }
+    .catalog__pagination-next {
+        fill: #848f9f;
+    }
+    &--active {
+        color: #ffffff;
+        background-color: #848f9f;
+        border-radius: 4px;
+    }
+}

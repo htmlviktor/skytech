@@ -37,6 +37,11 @@
 	}
 }
 
+@mixin inside-title {
+	font-size: 30px;
+	font-weight: 700;
+}
+
 
 @mixin descript {
 	font-weight: 490;

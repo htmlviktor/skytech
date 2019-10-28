@@ -1,10 +1,19 @@
 .card {
-  min-height: 320px;
+  min-height: 280px;
   border: solid 1px #d4dade;
   border-radius: 4px;
   position: relative;
   padding: 15px;
-
+  transition: box-shadow 0.5s, transform 0.5s;
+  &:hover {
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    // min-height: 320px;
+     .card__more {
+      // opacity: 1;
+      // position: static;
+    }
+  }
   &--big {
     height: 680px;
     width: 580px;
@@ -16,11 +25,11 @@
       width: 100%;
     }
   }
-  
+
   &.swiper-slide {
     height: auto;
   }
-  
+
   display: flex;
   flex-direction: column;
 }
@@ -35,11 +44,14 @@
 
 .card__more {
   font-size: 12px;
-  display: block;
   width: 100%;
   padding: 14px 0;
   text-align: center;
   margin-top: 10px;
+  display: none;
+  opacity: 1;
+  transition: opacity 0.5s;
+  // position: absolute;
 }
 
 .card__title-link {
@@ -58,5 +70,5 @@
 
 .card__info {
   margin-top: auto;
+  position: relative;
 }
-
