@@ -21,6 +21,9 @@ a {
   color: $main-color-text;
 }
 
+.main {
+  overflow-x: hidden;
+}
 
 img {
   max-width: 100%;

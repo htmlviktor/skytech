@@ -9,7 +9,7 @@
 }
 
 .card-description__title {
-    color: #d4dade;
+    color: #879096;
     font-size: 18px;
     font-weight: 500;
 }
@@ -17,4 +17,10 @@
 .card-description__text {
     color: #2f3640;
     line-height: 1.5;
+}
+
+@media (max-width: $laptop-width) {
+    .card-description__wrapper {
+        padding: 60px 20px;
+    }
 }

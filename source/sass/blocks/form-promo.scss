@@ -21,6 +21,10 @@
 .form-promo__wrapper {
   margin-bottom: 15px;
   &--file {
+    input {
+      display: none;
+    }
+
     border: 1px solid rgba(132, 143, 159, 0.4);
     border-radius: 4px;
     height: 55px;

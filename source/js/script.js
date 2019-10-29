@@ -116,10 +116,10 @@ const employersSlider = new Swiper('.employers__slider', {
     spaceBetween: 20,
     breakpoints: {
         1400: {
-            slidesPerView: 5.3,
+            slidesPerView: 4.8,
         },
         1100: {
-            slidesPerView: 4.7,
+            slidesPerView: 4.3,
         },
         760: {
             slidesPerView: 1.8,
@@ -149,6 +149,21 @@ const galleryThumbSlider = new Swiper('.card-main__gallery-thumbs', {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 2.8,
+        },
+        760: {
+            slidesPerView: 4,
+        },
+        1100: {
+            slidesPerView: 4,
+        },
+        1400: {
+            slidesPerView: 4
+        }
+
+    }
 });
 
 const gallerySlider = new Swiper('.card-main__gallery-container', {

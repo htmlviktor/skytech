@@ -1,0 +1,20 @@
+.categories__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 280px;
+  margin-right: 20px;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.categories__image {
+  border: solid 1px #d4dade;
+  border-radius: 4px;
+}

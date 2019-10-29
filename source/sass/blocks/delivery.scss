@@ -1,10 +1,64 @@
 .delivery {
-    background: 
-    url("../img/promo/delivery-bg.png") no-repeat 80% 100px,
-    url("../img/promo/delivery-map.png") no-repeat 87% 38px,
-    #f2f4f6;
+  background-color: #f2f4f6;
 }
 
 .delivery__wrapper {
-    padding: 110px 0;
+  padding: 110px 0;
+  position: relative;
+    &::before {
+        content: "";
+        width: 790px;
+        height: 460px;
+        position: absolute;
+        background-image: url("../img/promo/delivery-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: -100px;
+        bottom: -30px;
+        z-index: 1;
+    }
+    &::after {
+        content: "";
+        width: 950px;
+        height: 530px;
+        position: absolute;
+        background-image: url("../img/promo/delivery-map.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: -270px;
+        top: 30px;
+        z-index: 0;
+    }
+}
+
+.delivery__option-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a2026;
+}
+
+@media (max-width: $laptop-width) {
+    .delivery__wrapper {
+        padding: 70px 0;
+        &::before {
+            height: 430px;
+            right: -300px;
+        }
+        &::after {
+            right: -600px;
+            height: 430px;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .delivery__wrapper {
+        padding: 50px 0;
+        &::before {
+            content: none;
+        }
+        &::after {
+            content: none;
+        }
+    }
 }
