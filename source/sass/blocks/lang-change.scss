@@ -1,0 +1,55 @@
+.lang-change__bar {
+  width: 19px;
+  height: 9px;
+  border-radius: 5px;
+  background-color: #f2f4f6;
+  margin: 0 8px;
+  position: relative;
+}
+
+.header__lang-bef {
+    cursor: pointer;
+}
+
+.lang-change {
+    position: relative;
+}
+
+.lang-change__radio-rus {
+  display: none;
+  position: relative;
+  &:checked {
+    & ~ .lang-change__bar::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: #00dfc8;
+      z-index: 1;
+      left: 0;
+      transform: translateX(0px);
+      transition: all 0.1s ease-out;
+      cursor: pointer;
+    }
+  }
+}
+
+.lang-change__radio-ua {
+    display: none;
+    position: relative;
+    &:checked {
+      & ~ .lang-change__bar::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: #00dfc8;
+        z-index: 1;
+        transform: translateX(10px);
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+      }
+    }
+  }

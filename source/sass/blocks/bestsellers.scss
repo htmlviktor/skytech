@@ -12,8 +12,18 @@
   margin-top: 50px;
 }
 
+.bestsellers__slider {
+  .swiper-wrapper {
+    padding: 50px 0;
+  }
+}
+
 .bestsellers__link {
   padding: 12px 40px 12px 17px;
+  background-image: url("../img/sprite/arrow-b.svg");
+  background-repeat: no-repeat;
+  background-position: 84% 47%;
+  background-size: 9px 9px;
   &--mobile {
     display: none;
   }
@@ -51,6 +61,24 @@
 
 .bestellers__wrapper {
   position: relative;
+}
+
+
+.bestsellers__slider-scrollbar {
+  width: 100%;
+  height: 6px;
+  background-color: #f2f4f6;
+  margin-top: 100px;
+}
+
+.bestsellers__slider-scrollbar-drag {
+  background-color: #00dfc8;
+  height: 100%;
+  position: relative;
+  background: #00dfc8;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
 }
 
 @media (max-width: $desktop-width) {

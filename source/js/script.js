@@ -15,7 +15,31 @@ category.addEventListener('click', (evt) => {
     categoryMenu.classList.toggle('categories-menu__list-inner--open');
 })
 
+const mainSlider = new Swiper('.main-slider--swiper', {
+    simulateTouch: false,
+    // autoplay: {
+    //     delay: 5000
+    // },
+    pagination: {
+        el: '.main-slider__controlls',
+        bulletClass: 'main-slider__controlls-btn',
+        bulletActiveClass: 'main-slider__controlls-btn--active',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<button class="' + className + '">' + (index + 1) + '</button>';
+        },
+    },
+});
+
 const swiper = new Swiper('.bestsellers__slider', {
+    scrollbar: {
+        el: '.bestsellers__slider-scrollbar',
+        hide: false,
+        lockClass: 'ds',
+        dragClass: 'bestsellers__slider-scrollbar-drag',
+        dragSize: 50,
+        draggable: true
+    },
     breakpoints: {
         1440: {
             slidesPerView: 6,
@@ -35,7 +59,6 @@ const swiper = new Swiper('.bestsellers__slider', {
             centeredSlides: true,
             loop: true
         }
-
     }
 });
 
