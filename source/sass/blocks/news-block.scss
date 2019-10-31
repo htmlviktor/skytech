@@ -37,6 +37,16 @@
 .news-block__item-text {
   font-size: 18px;
   font-weight: 500;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 11px;
+    background-image: url("../img/sprite/arrow-news.svg");
+    bottom: -25px;
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -45,6 +55,15 @@
   }
   .news-block {
     padding: 60px 80px;
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .news-block {
+    padding: 11px 20px 42px;
+  }
+  .news-block__item-text {
+    font-size: 14px;
   }
 }
 

@@ -20,6 +20,13 @@
     }
 }
 
+@media (max-width: $desktop-width) {
+    .navigation__list {
+        li {
+            margin-left: 24px;
+        }
+    }
+}
 
 @media (max-width: $laptop-width) {
     .navigation__link {

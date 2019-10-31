@@ -22,7 +22,25 @@
     font-size: 0;
     border: none;
     background: transparent;
-    padding: 15px;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 0.9;
+    }
+    &:focus {
+        outline: none;
+    }
+    &--prev {
+        background-image: url("../img/sprite/arrow-left-inner.svg");
+    }
+    &--next {
+        background-image: url("../img/sprite/arrow-right-inner.svg");
+    }
 }
 
 .special-offer__controlls {
@@ -56,6 +74,9 @@
 }
 
 @media (max-width: $laptop-width) {
+    // .special-offer {
+    //     margin-top: 0;
+    // }
     .special-offer__main-wrapper {
         flex-direction: column;
     }
@@ -63,6 +84,12 @@
         max-width: 100%;
     }
     .special-offer__slider {
-        margin-top: 15px;
+        margin-top: 0px;
+    }
+    .special-offer__title-wrapper {
+        padding: 0;
+    }
+    .special-offer__controlls {
+        display: none;
     }
 }

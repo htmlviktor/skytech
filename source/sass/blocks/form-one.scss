@@ -81,12 +81,12 @@
   .form-one__form {
     margin-left: 0;
   }
-}
-
-@media (max-width: $tablet-width) {
   .form-one {
     margin-top: 50px;
   }
+}
+
+@media (max-width: $tablet-width) {
   .form-one__wrapper {
     width: 100%;
   }

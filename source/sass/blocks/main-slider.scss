@@ -1,6 +1,16 @@
 .main-slider {
   position: relative;
-  height: 700px;
+  min-height: 680px;
+  background-color: #dfe1e1;
+  @media (max-width: $desktop-width) {
+    min-height: 436px;
+  }
+  @media (max-width: $laptop-width) {
+    min-height: 354px;
+  }
+  @media (max-width: $tablet-width) {
+    min-height: 277px;
+  }
 }
 
 .main-slider__list {
@@ -67,6 +77,9 @@
   .main-slider__item {
     padding: 90px 0;
   }
+  .main-slider__controlls-btn {
+    padding: 2px 50px;
+  }
 }
 
 @media (max-width: $laptop-width) {
@@ -92,12 +105,15 @@
     flex-direction: column-reverse;
   }
   .main-slider__item {
-    padding: 20px 0 55px;
+    padding: 20px 0 70px;
   }
   .main-title {
     font-size: 30px;
   }
   .main-slider__descript {
     font-size: 20px;
+  }
+  .main-slider__item-info {
+    padding-top: 240px;
   }
 }

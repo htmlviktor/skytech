@@ -18,3 +18,9 @@
   border: solid 1px #d4dade;
   border-radius: 4px;
 }
+
+@media (max-width: $desktop-width) {
+  .categories-menu__link {
+    font-size: 13px;
+  }
+}

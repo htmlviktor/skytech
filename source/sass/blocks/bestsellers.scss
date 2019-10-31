@@ -96,6 +96,12 @@
   .bestsellers {
     margin-top: 50px;
   }
+  .bestsellers__slider-wrapper {
+    margin-top: 0;
+  }
+  .bestsellers__slider-scrollbar {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: $tablet-width) {
