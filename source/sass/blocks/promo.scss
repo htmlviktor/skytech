@@ -1,5 +1,5 @@
 .promo__wrapper {
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 50px 120px;
   position: relative;
   border: solid 1px #d4dade;
@@ -18,9 +18,26 @@
 }
 
 .promo__link {
-  padding: 15px 30px;
+  padding: 15px 60px;
   margin-top: 15px;
   display: inline-flex;
+}
+
+.promo-delivery__label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #848f9f;
+  padding-left: 40px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 27px;
+    height: 22px;
+    position: absolute;
+    background-image: url("../img/sprite/weight-tool.svg");
+    left: 0;
+    top: -2px;
+  }
 }
 
 @media (max-width: $laptop-width) {

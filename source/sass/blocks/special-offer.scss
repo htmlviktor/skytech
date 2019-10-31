@@ -1,5 +1,5 @@
 .special-offer {
-    margin-top: 130px;
+    margin-top: 50px;
 }
 
 .special-offer__main-wrapper {
@@ -22,18 +22,34 @@
     font-size: 0;
     border: none;
     background: transparent;
+    padding: 15px;
+}
+
+.special-offer__controlls {
+    display: flex;
+    position: relative;
+    &::before {
+        content: "";
+        height: 28px;
+        width: 2px;
+        background-color: #d4dade;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+    }
 }
 
 .special-offer__slider {
-    height: 680px;
-    max-width: 608px;
+    padding: 50px 0;
+    // height: 680px;
+    // max-width: 608px;
 }
 
 @media (max-width: $desktop-width) {
-    .special-offer__slider {
-        max-width: 48%;
-        height: 320px;
-    }
+    // .special-offer__slider {
+    //     max-width: 48%;
+    //     height: 320px;
+    // }
     .special-offer {
         margin-top: 50px;
     }

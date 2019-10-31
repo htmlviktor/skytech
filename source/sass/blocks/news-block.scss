@@ -1,6 +1,6 @@
 .news-block {
   background-color: #f2f4f6;
-  padding: 80px;
+  padding: 30px 0 50px;
 }
 
 .news-block__list {
@@ -17,10 +17,15 @@
 }
 
 .news-block__link {
-  padding: 15px 30px;
+  padding: 15px 40px;
   &--mobile {
     display: none;
   }
+
+  background-image: url(../img/sprite/arrow-b.svg);
+  background-repeat: no-repeat;
+  background-position: 89% 48%;
+  background-size: 9px 9px;
 }
 
 .news-block__item {
@@ -33,7 +38,6 @@
   font-size: 18px;
   font-weight: 500;
 }
-
 
 @media (max-width: $desktop-width) {
   .news-block__item-text {

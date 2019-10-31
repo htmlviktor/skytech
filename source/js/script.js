@@ -66,6 +66,7 @@ const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
     slidesPerView: 2,
     slidesPerColumn: 1,
     spaceBetween: 30,
+    loop: true,
     navigation: {
         nextEl: '.special-offer__btn--next',
         prevEl: '.special-offer__btn--prev',
@@ -73,10 +74,11 @@ const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
     breakpoints: {
         1440: {
             spaceBetween: 30,
-            slidesPerColumn: 2
+            slidesPerView: 4,
+            // slidesPerColumn: 2
         },
         1100: {
-            slidesPerView: 2,
+            slidesPerView: 4,
         },
         760: {
             slidesPerView: 2.5,
@@ -92,7 +94,7 @@ const swiperTwo = new Swiper('.special-offer__slider-inizialize', {
 const reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 3,
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
     navigation: {
         nextEl: '.reviews__btn--next',
         prevEl: '.reviews__btn--prev',
@@ -126,6 +128,12 @@ const aboutCompanySlider = new Swiper('.about-company__slider', {
             slidesPerView: 'auto',
             spaceBetween: -80,
         },
+        1100: {
+            spaceBetween: -40,
+        },
+        1400: {
+            spaceBetween: -80,
+        },
         320: {
             slidesPerView: 1,
             spaceBetween: 0
@@ -134,9 +142,16 @@ const aboutCompanySlider = new Swiper('.about-company__slider', {
 })
 
 const employersSlider = new Swiper('.employers__slider', {
-    slidesPerView: 5.3,
-    loop: true,
+    slidesPerView: 5.3,    
     spaceBetween: 20,
+    scrollbar: {
+        el: '.employers__slider-scrollbar',
+        hide: false,
+        lockClass: 'ds',
+        dragClass: 'employers__slider-scrollbar-drag',
+        dragSize: 50,
+        draggable: true
+    },
     breakpoints: {
         1400: {
             slidesPerView: 4.8,
@@ -153,18 +168,18 @@ const employersSlider = new Swiper('.employers__slider', {
     }
 })
 
-const partnersSlider = new Swiper('.partners__slider', {
-    breakpoints: {
-        320: {
-            slidesPerView: 2.8,
-            centeredSlides: true,
-            loop: true
-        },
-        760: {
-            slidesPerView: 'auto'
-        }
-    }
-})
+// const partnersSlider = new Swiper('.partners__slider', {
+//     breakpoints: {
+//         320: {
+//             slidesPerView: 2.8,
+//             centeredSlides: true,
+//             loop: true
+//         },
+//         760: {
+//             slidesPerView: 'auto'
+//         }
+//     }
+// })
 
 const galleryThumbSlider = new Swiper('.card-main__gallery-thumbs', {
     slidesPerView: 4,
