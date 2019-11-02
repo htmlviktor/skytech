@@ -3,6 +3,7 @@
   justify-content: space-between;
 }
 
+
 .card-main__character-title-wrapper {
     display: inline-block;
     border-bottom: solid 1px #e9ebed;
@@ -11,6 +12,7 @@
 
 .card-main__info {
   width: 40%;
+  flex-grow: 1;
 }
 
 .card-main__gallery {
@@ -36,6 +38,12 @@
 
 .card-main__character-list {
     @include reset-list;
+    max-width: 80%;
+    display: none;
+}
+
+.card-main__character-table {
+    display: none;
 }
 
 .card-main__character-item {
@@ -132,6 +140,10 @@
             display: none;
         }
     }
+}
+
+.card-main__character--active-display {
+    display: block;
 }
 
 @media (max-width: $laptop-width) {
