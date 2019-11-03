@@ -61,11 +61,18 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .categories-menu__link {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: $laptop-width) {
   .categories-menu__link {
     color: #1a2026;
     width: 300px;
     text-align: left;
+    // font-size: 18px;
     &--active {
       background-color: #f2f4f6;
     }
@@ -83,6 +90,7 @@
     position: absolute;
     &--open {
       display: flex;
+      z-index: 111;
     }
     .categories-menu__link {
       padding: 15px 0px 15px 15px;

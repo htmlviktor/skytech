@@ -1,0 +1,12 @@
+.favorites {
+    padding: 50px 0;
+}
+.favorites__list {
+    @include reset-list;
+
+    display: flex;
+}
+
+.favorites__item {
+    margin-right: 20px;
+}

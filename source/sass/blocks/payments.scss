@@ -1,0 +1,63 @@
+.payments {
+    padding-top: 20px;
+}
+
+.payments__list {
+  @include reset-list;
+
+  display: flex;
+  padding-top: 70px;
+}
+
+.payments__item {
+  max-width: 240px;
+  margin-right: 70px;
+  padding-top: 0;
+}
+
+.payemnts__item-title {
+  font-size: 18px;
+  color: #1a2026;
+  font-weight: 800;
+}
+
+.payments__item-description {
+  color: #8a95a4;
+  line-height: 1.31;
+}
+
+.payments__item-description-hidden {
+  display: none;
+}
+
+.payments__item-description-more {
+  color: #00dfc8;
+  margin-top: 10px;
+  display: block;
+
+  cursor: pointer;
+}
+
+
+@media (max-width: $laptop-width) {
+    .payments__list {
+        flex-wrap: wrap;
+    }
+    .payments__item {
+        max-width: 45%;
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .payments__list {
+        padding-top: 0;
+    }
+    .payments__item {
+        max-width: 90%;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 50px;
+    }
+}

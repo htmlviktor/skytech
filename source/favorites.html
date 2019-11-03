@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Start Template</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div style="display:none">
+        <include src="build/img/sprite/sprite.svg"></include>
+    </div>
+    <include src="source/parts/header.html"></include>
+    <main class="main">
+        <include src="source/parts/breadcrumbs.html"></include>
+        <div class="container">
+            <section class="favorites">
+                <h1 class="favorites__title sub-title">Избранное</h1>
+                <p class="favorites__description">Вы пока не добавили не одного товара</p>
+                <ul class="favorites__list">
+                    <li class="favorites__item">
+                        <include src="source/parts/product-card.html"></include>
+                    </li>
+                    <li class="favorites__item">
+                        <include src="source/parts/product-card.html"></include>
+                    </li>
+                    <li class="favorites__item">
+                        <include src="source/parts/product-card.html"></include>
+                    </li>
+                    <li class="favorites__item">
+                        <include src="source/parts/product-card.html"></include>
+                    </li>
+                </ul>
+                <a href="" class="favorites__link button">Выбрать новый товар</a>
+            </section>
+        </div>
+    </main>
+    <include src="source/parts/footer.html"></include>
+
+</body>
+
+</html>

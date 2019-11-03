@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Start Template</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div style="display:none">
+        <include src="build/img/sprite/sprite.svg"></include>
+    </div>
+    <include src="source/parts/header.html"></include>
+    <main class="main">
+        <include src="source/parts/breadcrumbs.html"></include>
+        <section class="contacts">
+            <div class="container">
+                <h1 class="contacts__title sub-title">Контакты</h1>
+                <div class="contacts__wrapper">
+                    <div class="contacts__info-block">
+                        <div class="contacts__phones">
+                            <span class="contacts__phones-title">Телефоны</span>
+                            <div class="contacts__phones-block">
+                                <a href="" class="contacts__phone">+38 (044) 290 5232</a>
+                                <a href="" class="contacts__phone">+38 (044) 290 5232</a>
+                                <a href="" class="contacts__phone">+38 (044) 290 5232</a>
+                                <a href="" class="contacts__phone">+38 (044) 290 5232</a>
+                                <a href="" class="contacts__phone">+38 (044) 290 5232</a>
+                            </div>
+                            <div class="contacts__address-block">
+                                <span class="contacts__address-title">Адрес</span>
+                                <p class="contacts__address-text">Украина, 50000,г. Кривой Рог,
+                                    пр. Почтовый 49, офис 227
+                                </p>
+                                <p class="contacts__address-text">Украина, 01025,Киев,
+                                    ул. Владимирская 10
+                                </p>
+                            </div>
+                            <div class="contacts__chart-block">
+                                <span class="contacts__chart-title">График работы</span>
+                                <p class="contacts__chart-text">
+                                    Понедельник - Пятница
+                                    9:00 до 18:00
+                                </p>
+                            </div>
+                            <div class="contacts__email-block">
+                                <span class="contacts__email-title">E-mail</span>
+                                <p class="contacts__email-text">
+                                    info@skytechpolymer.com.ua
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__form-wrapper">
+                        <form action="" class="contacts__form form-modal">
+                            <h2 class="contacts__form-title">Задайте вопрос</h2>
+                            <div class="form-modal__wrapper">
+                                <input class="form-modal__name" type="text" placeholder="Имя">
+                            </div>
+                            <div class="form-modal__wrapper">
+                                <input class="form-modal__phone" type="text" placeholder="Имя">
+                            </div>
+                            <div class="form-modal__wrapper">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit" class="form-modal__submit button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <include src="source/parts/footer.html"></include>
+
+</body>
+
+</html>
