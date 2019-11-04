@@ -1,6 +1,5 @@
 .card {
   min-height: 320px;
-  width: 280px;
   border: solid 1px #d4dade;
   border-radius: 4px;
   position: relative;
@@ -9,6 +8,10 @@
   &:hover {
     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
     transform: scale(1.01);
+    @media (max-width: $laptop-width) {
+      box-shadow: none;
+      transform: scale(1);
+    }
   }
   &--big {
     height: 680px;

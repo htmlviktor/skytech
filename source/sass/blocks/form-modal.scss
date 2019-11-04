@@ -1,0 +1,138 @@
+.form-modal {
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.contacts__form-title {
+  font-size: 30px;
+  color: #1a2026;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.form-modal__input {
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  border: 1px solid #848f9f;
+  border-radius: 4px;
+  padding-left: 20px;
+
+  color: black;
+}
+
+.form-modal__textarea {
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  border: 1px solid #848f9f;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: black;
+}
+
+.form-modal__textarea {
+  width: 100%;
+}
+
+.form-modal__wrapper {
+  margin-bottom: 20px;
+}
+
+.form-modal__submit {
+  display: block;
+  width: 100%;
+  padding: 20px;
+}
+
+.form-modal__textarea {
+  resize: none;
+  height: 110px;
+}
+
+/*ВНИМАНИЕ - описываю тут overlay чтобы не дробить блоки, форма переиспользуема не как modal*/
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.81);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-modal-wrapper {
+  width: 900px;
+  display: flex;
+  position: relative;
+}
+
+.form-modal__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-image: url("../img/sprite/close.svg");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form-modal__main {
+  width: 60%;
+  padding: 60px 80px;
+}
+
+.form-modal__background {
+  width: 40%;
+  background-image: url("../img/form-bg.png");
+}
+
+.form-modal__title {
+  font-size: 30px;
+  color: #1a2026;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+@media (max-width: $desktop-width) {
+  .form-modal__main {
+    padding: 30px 77px;
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .form-modal__background {
+    display: none;
+  }
+  .form-modal__main {
+    width: 100%;
+    padding: 40px 70px;
+  }
+  .form-modal-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form-modal-wrapper {
+    width: 100%;
+  }
+  .form-modal__main {
+    padding: 30px 30px;
+  }
+  .form-modal__close {
+    width: 30px;
+    height: 30px;
+  }
+}

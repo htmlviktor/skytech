@@ -3,10 +3,48 @@
 }
 .favorites__list {
     @include reset-list;
-
+    padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.favorites__link {
+    padding: 15px 30px;
 }
 
 .favorites__item {
     margin-right: 20px;
+    width: 23%;
+    margin-bottom: 20px;
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: $laptop-width) {
+    .favorites__item {
+        width: 30%;
+        &:nth-child(4n) {
+            margin-right: 20px;
+        }
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .favorites__item {
+        width: 47%;
+        flex-grow: 1;
+        &:nth-child(3n) {
+            margin-right: 20px;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+    .favorites__card {
+        min-height: 200px;
+    }
 }
