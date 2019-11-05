@@ -34,18 +34,59 @@
     border-bottom: solid 1px #f2f4f6;
   }
   &:last-child {
-      border-top: solid 1px #f2f4f6;
-      border-left: solid 1px #f2f4f6;
-      margin-top: -1px;
+    border-top: solid 1px #f2f4f6;
+    border-left: solid 1px #f2f4f6;
+    margin-top: -1px;
   }
   &:nth-child(2n) {
-      padding-left: 47px;
+    padding-left: 47px;
   }
+
+  &--np {
+    background-image: url("../img/delivery/nova-poshta.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+  }
+
+  &--del {
+    background-image: url("../img/delivery/delivery.png");
+    background-repeat: no-repeat;
+    background-position: 50px top;
+    @media (max-width: $tablet-width) {
+      background-position: left top;
+    }
+  }
+
+  &--it {
+    background-image: url("../img/delivery/in-time.png");
+    background-repeat: no-repeat;
+    background-position: left 17px;
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+
+  &--ne {
+    background-image: url("../img/delivery/night-expres.png");
+    background-repeat: no-repeat;
+    background-position: 50px 17px;
+    padding-top: 90px;
+    padding-bottom: 0;
+
+    @media (max-width: $tablet-width) {
+      background-position: left top;
+    }
+  }
+
 }
 
 .main-delivery__description-block {
   width: 40%;
   margin-left: 55px;
+  line-height: 1.5;
+
+  height: 582px;
+  overflow-y: scroll;
 }
 
 .main-delivery__item-title {
@@ -70,40 +111,44 @@
 }
 
 .main-delivery__description-title {
-    font-size: 24px;
+  font-size: 24px;
+  margin: 0;
 }
 
 @media (max-width: $laptop-width) {
-    .main-delivery__wrapper {
-        flex-wrap: wrap;
-        margin-top: 0;
-    }
-    .main-delivery__list {
-        width: 100%;
-        box-shadow: none;
-    }
-    .main-delivery__description-block {
-        width: 100%;
-        margin-left: 0;
-    }
+  .main-delivery__wrapper {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .main-delivery__list {
+    width: 100%;
+    box-shadow: none;
+  }
+  .main-delivery__description-block {
+    width: 100%;
+    margin-left: 0;
+
+    height: auto;
+    overflow-y: auto;
+  }
 }
 
 @media (max-width: $tablet-width) {
-    .main-delivery__list {
-        padding: 0;
-        flex-wrap: wrap;
+  .main-delivery__list {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .main-delivery__item {
+    width: 100%;
+    padding-bottom: 20px;
+    &:first-child {
+      border: none;
     }
-    .main-delivery__item {
-        width: 100%;
-        padding-bottom: 20px;
-        &:first-child {
-            border: none;
-          }
-          &:last-child {
-             border: none;
-          }
-          &:nth-child(2n) {
-              padding-left: 0;
-          }
+    &:last-child {
+      border: none;
     }
+    &:nth-child(2n) {
+      padding-left: 0;
+    }
+  }
 }

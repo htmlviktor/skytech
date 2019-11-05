@@ -21,6 +21,23 @@
     }
 }
 
+.favorites__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorites__items-clear {
+    color: #848f9f;
+    font-weight: 500;
+    cursor: pointer;
+
+    background-image: url("../img/sprite/delete.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 20px;
+}
+
 @media (max-width: $laptop-width) {
     .favorites__item {
         width: 30%;

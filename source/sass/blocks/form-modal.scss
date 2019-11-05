@@ -63,7 +63,7 @@
   position: fixed;
   background-color: rgba(0, 0, 0, 0.81);
   z-index: 10;
-  display: flex;
+  display: none; // переключать на flex
   justify-content: center;
   align-items: center;
 }
@@ -94,7 +94,7 @@
 
 .form-modal__background {
   width: 40%;
-  background-image: url("../img/form-bg.png");
+  background-image: url("../img/bg/form-bg.png");
 }
 
 .form-modal__title {

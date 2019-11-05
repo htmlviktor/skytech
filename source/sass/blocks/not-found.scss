@@ -1,0 +1,26 @@
+.not-found {
+    background-image: url("../img/promo/404.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+
+    height: 400px;
+    @media (max-width: $desktop-width) {
+        height: 350px;
+    }
+}
+
+.not-found__title {
+    text-align: center;
+}
+
+.not-found__description {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.not-found-page {
+    padding-bottom: 50px;
+}
