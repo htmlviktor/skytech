@@ -4,7 +4,8 @@
 .partners__list {
   @include reset-list;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  // flex-wrap: wrap;
   // justify-content: space-between;
 //   padding: 100px 0;
 }
@@ -21,7 +22,7 @@
     padding: 0;
   }
   .partners__list {
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     // justify-content: flex-start;
     padding: 40px 0 70px;
   }
@@ -31,7 +32,11 @@
 }
 
 @media (max-width: $tablet-width) {
+  .partners__list  {
+    justify-content: space-around;
+  }
   .partners__item {
     margin-top: 0;
+    margin-bottom: 20px;
   }
 }

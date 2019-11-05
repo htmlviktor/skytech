@@ -5,8 +5,13 @@
     background-position: 50%;
 
     height: 400px;
-    @media (max-width: $desktop-width) {
+    @media (max-width: $laptop-width) {
         height: 350px;
+        background-image: url("../img/promo/404-t.png");
+    }
+    @media (max-width: $tablet-width) {
+        height: 250px;
+        background-image: url("../img/promo/404-m.png");
     }
 }
 

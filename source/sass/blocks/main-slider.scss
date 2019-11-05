@@ -13,6 +13,7 @@
   }
 }
 
+
 .main-slider__list {
   @include reset-list;
 }
@@ -31,12 +32,12 @@
   padding: 200px 0px;
   background-color: #dfe1e1;
 
-  &--plastic {
-    background-image: url("../img/banners/2.png");
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-size: initial;
-  }
+  // &--plastic {
+  //   background-image: url("../img/banners/2.png");
+  //   background-repeat: no-repeat;
+  //   background-position-x: 95%;
+  //   background-size: initial;
+  // }
 }
 
 .main-slider__descript {
