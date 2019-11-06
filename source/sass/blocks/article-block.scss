@@ -1,0 +1,51 @@
+.article-block__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-block__title {
+  max-width: 750px;
+}
+
+.article-block__art-info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    border: solid 1px #f0f0f0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  * {
+    padding: 5px 0px 5px 20px;
+  }
+}
+
+.article-block__text {
+  line-height: 1.67;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  img {
+      display: block;
+      padding: 20px 0;
+  }
+}
+
+.article-block__image-main {
+  background-color: #f7f8fa;
+  height: 350px;
+  display: flex;
+
+  img {
+      object-fit: cover;
+      width: 100%;
+  }
+}

@@ -15,6 +15,7 @@
   display: flex;
   margin-right: 20px;
   // padding: 40px 0 40px;
+  flex-grow: 1;
 }
 
 @media (max-width: $laptop-width) {

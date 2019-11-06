@@ -1,12 +1,18 @@
 .news-block {
   background-color: #f2f4f6;
   padding: 30px 0 50px;
+
+  &--white {
+    background-color: transparent;
+  }
 }
 
 .news-block__list {
   @include reset-list;
   display: flex;
   justify-content: space-between;
+
+  flex-wrap: wrap;
 }
 
 .news-block__title-wrapper {
@@ -22,7 +28,7 @@
     display: none;
   }
 
-  background-image: url(../img/sprite/arrow-b.svg);
+  background-image: url("../img/sprite/arrow-b.svg");
   background-repeat: no-repeat;
   background-position: 89% 48%;
   background-size: 9px 9px;
@@ -32,6 +38,8 @@
   border-top: solid 1px #2f3640;
   padding-top: 20px;
   width: 30%;
+
+  margin-bottom: 30px;
 }
 
 .news-block__item-text {
