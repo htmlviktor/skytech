@@ -1,106 +1,128 @@
 .header__wrapper {
-	padding-top: 15px;
-	padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	position: relative;
+  position: relative;
 }
 
 .header__phone {
-	width: 380px;
-	display: flex;
-	margin-left: auto;
+  width: 380px;
+  display: flex;
+  margin-left: auto;
 }
 
 .header__navigation {
-	width: 400px;
+  width: 400px;
 }
 
 .header__phone-number {
-	font-weight: 500;
-	margin-left: 20px;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
 .header__lang {
-	display: flex;
-	// width: 100px;
-	text-transform: uppercase;
-	font-size: 12px;
-	margin-left: auto;
-	margin-right: auto;
-	&--mobile {
-		display: none;
-		text-transform: uppercase;
-		font-size: 12px;
-	}
+  display: flex;
+  // width: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  &--mobile {
+    display: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 }
 
-.header__addition {
-	display: flex;
-	font-size: 0;
-	// width: 100px;
+.header__search-wrapper {
+  position: relative;
 
-	a {
-		margin-left: 30px;
-		&:first-child {
-			margin-left: 0;
-			@media (max-width: $tablet-width) {
-				margin-left: 30px;
-			}
-		}
-		@media (max-width: $desktop-width) {
-			margin-left: 15px;
-		}
-		@media (max-width: $tablet-width) {
-			margin-left: 30px;
-		}
-	}
+  a {
+	  padding: 15px;
+  }
+
+  &:hover {
+	  .header__search-form {
+		  display: block;
+	  }
+  }
+}
+
+.header__search-form {
+	position: absolute;
+	z-index: 10000;
+	display: none;
+}
+
+
+.header__addition {
+  display: flex;
+  align-items: center;
+//   font-size: 0;
+  // width: 100px;
+
+  a {
+    &:first-child {
+	  margin-left: 0;
+	  padding: 15px;
+      @media (max-width: $tablet-width) {
+        margin-left: 30px;
+      }
+    }
+    @media (max-width: $desktop-width) {
+      margin-left: 15px;
+    }
+    @media (max-width: $tablet-width) {
+      margin-left: 30px;
+    }
+  }
 }
 
 @media (max-width: $laptop-width) {
-	.header__navigation {
-		position: absolute;
-		bottom: -33px;
-		right: 0;
-		z-index: 1;
+  .header__navigation {
+    position: absolute;
+    bottom: -33px;
+    right: 0;
+    z-index: 1;
 
-		width: 74%;
-	}
+    width: 74%;
+  }
 }
 
 @media (max-width: $tablet-width) {
-	.header--open-menu {
-		.header__wrapper-bg {
-			background-color:#f2f4f6;
-		}
-	}
-	.header__wrapper-bg {
-		background-color:#ffffff;
-	}
-	.header__phone {
-		width: auto;
-		margin-left: auto;
-		margin-right: 0px;
-	}
-	.header__phone-number {
-		font-size: 0;
-		width: 20px;
-		height: 20px;
-		display: none;
-		&--current {
-			display: block;
-			background: url('../img/sprite/phone-call.svg');
-		}
-	}
-	.header__lang {
-		display: none;
-		&--mobile {
-			display: block;
-		}
-	}
-	.header__addition {
-		width: auto;
-	}
+  .header--open-menu {
+    .header__wrapper-bg {
+      background-color: #f2f4f6;
+    }
+  }
+  .header__wrapper-bg {
+    background-color: #ffffff;
+  }
+  .header__phone {
+    width: auto;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  .header__phone-number {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    display: none;
+    &--current {
+      display: block;
+      background: url("../img/sprite/phone-call.svg");
+    }
+  }
+  .header__lang {
+    display: none;
+    &--mobile {
+      display: block;
+    }
+  }
+  .header__addition {
+    width: auto;
+  }
 }

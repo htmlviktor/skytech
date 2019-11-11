@@ -8,8 +8,8 @@
   &:hover {
     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
     transform: scale(1.01);
-    min-height: 320px;
-    transition: all 0.3s ease-in-out;
+    // min-height: 320px;
+    transition: all 0.1s ease-in-out;
 
 
     @media (max-width: $laptop-width) {

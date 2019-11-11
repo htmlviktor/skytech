@@ -17,7 +17,7 @@
 					<li><a href="" class="navigation__link">Контакты</a></li>
 				</ul>
 			</nav>
-		<div class="lang-change header__lang">
+			<div class="lang-change header__lang">
 				<input type="radio" name="lang" class="lang-change__radio-rus" id="radio__rus" checked>
 				<label class="header__lang-rus header__lang-bef" for="radio__rus">rus</label>
 				<input type="radio" name="lang" class="lang-change__radio-ua" id="radio__ua">
@@ -32,12 +32,18 @@
 						<use xlink:href="#favorites" />
 					</svg>
 				</a>
-				<a href="" class="header__search">
-					<span class="visually-hidden">Поиск</span>
-					<svg width="19" height="19">
-						<use xlink:href="#search" />
-					</svg>
-				</a>
+				<div class="header__search-wrapper">
+					<a href="" class="header__search">
+						<span class="visually-hidden">Поиск</span>
+						<svg width="19" height="19">
+							<use xlink:href="#search" />
+						</svg>
+					</a>
+					<form action="" class="header__search-form search-form">
+						<input type="text" placeholder="Поиск" >
+						<button type="submit" class="visually-hidden">Найти</button>
+					</form>
+				</div>
 			</div>
 			<button class="menu-controll" type="button" title="Главное меню">
 				<span></span>
