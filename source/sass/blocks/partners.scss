@@ -34,10 +34,15 @@
 
 @media (max-width: $tablet-width) {
   .partners__list  {
-    justify-content: space-around;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
   }
   .partners__item {
     margin-top: 0;
     margin-bottom: 20px;
+    img {
+      max-width: none;
+    }
   }
 }
