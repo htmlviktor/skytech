@@ -26,9 +26,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     cursor: pointer;
-    &:hover {
-        opacity: 0.6;
-    }
+    transition: all 0.2s;
     &:active {
         opacity: 0.9;
     }
@@ -40,6 +38,10 @@
     }
     &--next {
         background-image: url("../img/sprite/arrow-right-inner.svg");
+    }
+
+    &:hover {
+        transform: scale(1.2);
     }
 }
 

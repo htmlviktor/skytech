@@ -24,6 +24,8 @@
 .footer__link {
     font-size: 14px;
     color: #d4dade;
+    transition: all 0.2s;
+    position: relative;
     &:hover {
         color: #feffff;
     }

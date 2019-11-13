@@ -70,6 +70,7 @@
   line-height: 1.93;
 }
 
+
 .catalog-main__sort-links {
   display: flex;
   flex-direction: row-reverse;
@@ -86,6 +87,11 @@
     background-color: #848f9f;
     color: white;
   }
+
+  &:hover:not(.catalog-main__sort-link--active) {
+    color: #03d0ba;
+    border: solid 1px #03d0ba;
+  }
 }
 
 .catalog__pagination {
@@ -96,10 +102,12 @@
 
 .catalog__pagination-link {
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   color: #848f9f;
   padding: 7px 11px;
+  border-radius: 4px;
+  border: solid 1px transparent;
   &:first-child {
     margin-left: auto;
   }
@@ -110,6 +118,19 @@
     color: #ffffff;
     background-color: #848f9f;
     border-radius: 4px;
+  }
+
+  &:hover:not(.catalog__pagination-link--active) {
+    color: #848f9f;
+    border: solid 1px #848fa0;
+  }
+}
+
+.catalog-main__categories-item {
+  transition: all 0.2s;
+  border-radius: 4px;
+  &:hover {
+    background-color: rgba(132, 143, 159, 0.06);
   }
 }
 

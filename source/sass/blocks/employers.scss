@@ -83,6 +83,13 @@
   &:nth-child(2) {
     margin-left: 5px;
   }
+
+  &:hover {
+    border: solid 1px #1adec7;
+    g {
+      fill: #1adec7;
+    }
+  }
 }
 .employers__links {
   margin-top: 20px;

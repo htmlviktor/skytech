@@ -21,6 +21,10 @@
 .header__phone-number {
   font-weight: 500;
   margin-left: 20px;
+  transition: all 0.2s;
+  &:hover {
+    color: #00dfc8;
+  }
 }
 
 .header__lang {
@@ -80,6 +84,15 @@
     }
   }
 }
+
+.header__favorites {
+  transition: all 0.2s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+
 
 @media (max-width: $laptop-width) {
   .header__navigation {
