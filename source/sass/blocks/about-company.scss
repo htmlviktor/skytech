@@ -48,7 +48,6 @@
   z-index: 10;
   bottom: 0;
   left: 80px;
-
   display: flex;
 }
 
@@ -56,6 +55,7 @@
   border: none;
   background: #f2f4f6;
   padding: 25px;
+  cursor: pointer;
 }
 
 @media (max-width: $desktop-width) {
