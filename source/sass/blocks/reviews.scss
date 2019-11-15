@@ -18,8 +18,9 @@
     background-image: url("../img/sprite/arrow-right.svg");
   }
   cursor: pointer;
+  transition: all 0.2s;
   &:hover {
-    opacity: 0.6;
+    transform: scale(1.2);
   }
   &:active {
     opacity: 0.9;

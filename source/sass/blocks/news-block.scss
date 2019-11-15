@@ -40,6 +40,13 @@
   width: 30%;
 
   margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
 }
 
 .news-block__item-text {

@@ -45,33 +45,32 @@
   position: relative;
 
   a {
-	  padding: 15px;
+    padding: 15px;
   }
 
   &:hover {
-	  .header__search-form {
-		  display: block;
-	  }
+    .header__search-form {
+      display: block;
+    }
   }
 }
 
 .header__search-form {
-	position: absolute;
-	z-index: 10000;
-	display: none;
+  position: absolute;
+  z-index: 10000;
+  display: none;
 }
-
 
 .header__addition {
   display: flex;
   align-items: center;
-//   font-size: 0;
+  //   font-size: 0;
   // width: 100px;
 
   a {
     &:first-child {
-	  margin-left: 0;
-	  padding: 15px;
+      margin-left: 0;
+      padding: 15px;
       @media (max-width: $tablet-width) {
         margin-left: 30px;
       }
@@ -91,8 +90,6 @@
     transform: scale(1.2);
   }
 }
-
-
 
 @media (max-width: $laptop-width) {
   .header__navigation {
@@ -122,20 +119,32 @@
   .header__phone-number {
     font-size: 0;
     width: 20px;
-    height: 20px;
+    height: 22px;
     display: none;
     &--current {
       display: block;
       background: url("../img/sprite/phone-call.svg");
+      background-repeat: no-repeat;
     }
   }
   .header__lang {
     display: none;
     &--mobile {
-      display: block;
+      display: flex;
+      align-items: center;
     }
   }
-  .header__addition {
-    width: auto;
+
+  .header__search-wrapper {
+    &:hover {
+      .header__search-form {
+        display: none;
+      }
+    }
+  }
+
+  .header__addition a:first-child {
+    padding: 0;
+    margin-left: 25px;
   }
 }

@@ -127,12 +127,14 @@
       position: relative;
       &::after {
         content: "";
-        width: 12px;
-        height: 12px;
-        // background: url("../img/sprite/arrow-down.svg");
+        width: 16px;
+        height: 9px;
+        background: url("../img/sprite/arrow-drop-down.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 10px;
+        bottom: 15px;
       }
     }
     &:hover {

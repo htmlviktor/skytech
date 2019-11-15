@@ -27,6 +27,21 @@
   position: absolute;
   cursor: pointer;
   right: 15px;
+
+  z-index: 100;
+  bottom: 30px;
+
+  &--active {
+    path {
+      fill: #1a2026;
+    }
+  }
+
+  &:hover {
+    path {
+      fill: #1a2026;
+    }
+  }
 }
 
 .card__title {
@@ -35,6 +50,10 @@
 
 .card__price {
   margin: 0;
+}
+
+.card__wrapper-image {
+  margin-bottom: 10px;
 }
 
 .card__link-container {
@@ -67,7 +86,6 @@
   // position: absolute;
   display: inline-flex;
 
-
   &:hover {
     background: rgba(15, 224, 203, 0.8);
     color: #1a2026;
@@ -93,7 +111,6 @@
   position: relative;
 }
 
-
 @media (max-width: $laptop-width) {
   .card__link-container {
     position: static;
@@ -103,5 +120,10 @@
   .card__more {
     display: block;
     width: 100%;
+  }
+
+  .card__add-features {
+    right: 15px;
+    top: 15px;
   }
 }

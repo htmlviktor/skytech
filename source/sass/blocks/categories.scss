@@ -13,6 +13,13 @@
     margin-right: 0;
   }
   margin-bottom: 30px;
+  transition: all 0.1s;
+  &:hover {
+    color: #00dfc8;
+    .categories__image-wrapper {
+      border: solid 1px #00dfc8;
+    }
+  }
 }
 
 .categories__image-wrapper {
@@ -64,5 +71,8 @@
   }
   .categories__wrapper {
     justify-content: center;
+  }
+  .categories__image-wrapper {
+    height: 120px;
   }
 }
