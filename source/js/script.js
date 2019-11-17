@@ -143,7 +143,7 @@ const aboutCompanySlider = new Swiper('.about-company__slider', {
 })
 
 const employersSlider = new Swiper('.employers__slider', {
-    slidesPerView: 5.3,    
+    slidesPerView: 5.3,
     spaceBetween: 20,
     scrollbar: {
         el: '.employers__slider-scrollbar',
@@ -169,18 +169,6 @@ const employersSlider = new Swiper('.employers__slider', {
     }
 })
 
-// const partnersSlider = new Swiper('.partners__slider', {
-//     breakpoints: {
-//         320: {
-//             slidesPerView: 2.8,
-//             centeredSlides: true,
-//             loop: true
-//         },
-//         760: {
-//             slidesPerView: 'auto'
-//         }
-//     }
-// })
 
 const galleryThumbSlider = new Swiper('.card-main__gallery-thumbs', {
     slidesPerView: 4,
@@ -214,3 +202,30 @@ const gallerySlider = new Swiper('.card-main__gallery-container', {
         prevEl: '.card-main__thubmbs-button--prev',
     },
 });
+
+
+//Product-card page
+if (document.body.dataset.page === 'product-card') {
+    const cardMainTitle = document.querySelector('.card-main__character-title');
+    const cardMainSize = document.querySelector('.card-main__character-title--size');
+    const cardActiveLabel = document.querySelector('.card-main__character-title--active');
+
+    const cardMainList = document.querySelector('.card-main__character-list');
+    const cardMainTable = document.querySelector('.card-main__character-table');
+
+    cardMainSize.addEventListener('click', () => {
+        cardMainTitle.classList.remove('card-main__character-title--active');
+        cardMainSize.classList.add('card-main__character-title--active');
+
+        cardMainList.classList.remove('card-main__character--active-display');
+        cardMainTable.classList.add('card-main__character--active-display');
+    })
+
+    cardMainTitle.addEventListener('click', () => {
+        cardMainSize.classList.remove('card-main__character-title--active');
+        cardMainTitle.classList.add('card-main__character-title--active');
+
+        cardMainTable.classList.remove('card-main__character--active-display');
+        cardMainList.classList.add('card-main__character--active-display');
+    })
+}

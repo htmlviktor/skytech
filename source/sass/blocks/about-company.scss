@@ -52,10 +52,29 @@
 }
 
 .about-company__btn {
+  width: 80px;
+  height: 70px;
   border: none;
   background: #f2f4f6;
   padding: 25px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50%;
+  &--prev {
+    background-image: url("../img/sprite/arrow-left.svg");
+  }
+  &--next {
+    background-image: url("../img/sprite/arrow-right.svg");
+  }
+  transition: all 0.2s;
+  outline: none;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: $desktop-width) {

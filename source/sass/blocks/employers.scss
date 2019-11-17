@@ -80,6 +80,8 @@
   justify-content: center;
   align-items: center;
 
+  transition: all 0.2s;
+
   &:nth-child(2) {
     margin-left: 5px;
   }
@@ -93,6 +95,7 @@
 }
 .employers__links {
   margin-top: 20px;
+  display: flex;
 }
 
 .employers__slider-scrollbar {

@@ -127,14 +127,19 @@
     border: none;
     width: 22px;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 40%;
     &--prev {
         left: 0;
+        background-image: url("../img/sprite/arrow-left.svg");
         &.swiper-button-disabled {
             display: none;
         }
     }
 
     &--next {
+        background-image: url("../img/sprite/arrow-right.svg");
         right: 0;
         &.swiper-button-disabled {
             display: none;

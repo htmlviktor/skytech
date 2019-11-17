@@ -19,7 +19,7 @@
     height: 100%;
     border: solid 1px #f0f0f0;
     position: absolute;
-    left: 0;
+    left: -11px;
     top: 0;
   }
 
@@ -32,6 +32,17 @@
 
 .article-block__art-data {
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/sprite/weekly-calendar.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .article-block__text {
@@ -63,5 +74,9 @@
   }
   .article-block__art-info {
     flex-direction: row;
+
+    &::before {
+      content: none;
+    }
   }
 }

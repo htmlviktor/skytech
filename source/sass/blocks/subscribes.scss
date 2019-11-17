@@ -54,9 +54,20 @@
   font-weight: 500;
 }
 
+.subscribe__social-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .social__link {
     margin: 20px 10px;
     display: inline-flex;
+
+    &:hover {
+      g {
+        fill: #00dfc8;
+      }
+    }
 }
 
 @media (max-width: $desktop-width) {

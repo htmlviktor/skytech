@@ -100,6 +100,14 @@
 
     width: 74%;
   }
+
+  .header__search-wrapper {
+    &:hover {
+      .header__search-form {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -135,13 +143,6 @@
     }
   }
 
-  .header__search-wrapper {
-    &:hover {
-      .header__search-form {
-        display: none;
-      }
-    }
-  }
 
   .header__addition a:first-child {
     padding: 0;
