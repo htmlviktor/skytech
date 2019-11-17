@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <div style="display:none">
-        <include src="build/img/sprite/sprite.svg"></include>
-    </div>
     <include src="source/parts/header.html"></include>
     <main class="main">
         <include src="source/parts/breadcrumbs.html"></include>
@@ -55,7 +52,7 @@
                         </div>
                     </div>
                     <div class="contacts__form-wrapper">
-                        <form action="" class="contacts__form form-modal">
+                        <form action="/" class="contacts__form form-modal">
                             <h2 class="contacts__form-title">Задайте вопрос</h2>
                             <div class="form-modal__wrapper">
                                 <input class="form-modal__name form-modal__input" type="text" placeholder="Имя">
@@ -64,7 +61,7 @@
                                 <input class="form-modal__phone form-modal__input" type="text" placeholder="Телефон">
                             </div>
                             <div class="form-modal__wrapper">
-                                <textarea class="form-modal__textarea" name="" id="" cols="30" rows="10" placeholder="Задайте вопрос"></textarea>
+                                <textarea class="form-modal__textarea" name="message" cols="30" rows="10" placeholder="Задайте вопрос"></textarea>
                             </div>
                             <button type="submit" class="form-modal__submit button">Отправить</button>
                         </form>
