@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 const buttonTrigger = document.querySelector('.menu-controll');
 const header = document.querySelector('.header');
 const menu = document.querySelector('.categories-menu');

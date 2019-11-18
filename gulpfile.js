@@ -17,7 +17,8 @@ var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var htmlmin = require("gulp-htmlmin");
-var babel = require("gulp-babel");
+var webpack = require("webpack");
+var webpackStream = require("webpack-stream");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -46,6 +47,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/sprite/*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/parts/**/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/js/*.js", gulp.series("compress", "refresh"));
 });
@@ -91,10 +93,28 @@ gulp.task("html", function () {
 
 gulp.task("compress", function() {
   return gulp.src("source/js/script.js")
-    .pipe(babel({
-      presets: ["@babel/env"]
-    }))
-    .pipe(uglify())
+  .pipe(webpackStream({
+    output: {
+      filename: 'script.js',
+    },
+    mode: 'development',
+    module: {
+      rules: [
+        {
+          test: /\.(js)$/,
+          exclude: /(node_modules)/,
+          loader: 'babel-loader',
+          query: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      ]
+    },
+    externals: {
+      jquery: 'jQuery'
+    }
+  }))
+    // .pipe(uglify())
     .pipe(gulp.dest("build/js"))
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
