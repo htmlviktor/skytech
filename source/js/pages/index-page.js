@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 
 
+
 export default class IndexPage {
     init() {
         this._initializeSliders();
