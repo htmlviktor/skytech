@@ -1,12 +1,12 @@
 import $ from 'jquery';
 
-export default class DeliveryPage {
+export default class PaymentsPage {
     init() {
         this._initialDom();
     }
 
     _initialDom() {
-        $('.main-delivery__more-text')
+        $('.payments__item-description-more')
             .click(function() {
                 if ($(this).text() === 'Подробнее') {
                     $(this).text('Скрыть');
@@ -15,8 +15,7 @@ export default class DeliveryPage {
                 }
                 $(this)
                 .prev()
-                .find('.main-delivery__item-text-hidden')
-                .slideToggle(400);
-            })
+                .toggle(400);
+            });
     }
 }

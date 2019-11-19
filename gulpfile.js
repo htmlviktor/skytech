@@ -50,6 +50,7 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/parts/**/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/js/*.js", gulp.series("compress", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("compress", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
