@@ -78,7 +78,7 @@
   a {
     &:first-child {
       // width: 50px;
-      margin-left: 0;
+      margin-left: 25px;
       padding: 15px;
       @media (max-width: $tablet-width) {
         margin-left: 30px;
@@ -104,6 +104,11 @@
 }
 
 @media (max-width: $laptop-width) {
+  .header__addition {
+    a:first-child {
+      margin-left: 5px;
+    }
+  }
   .header__favorites {
     margin-right: 20px;
   }

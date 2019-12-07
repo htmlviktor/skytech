@@ -88,7 +88,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -126,7 +126,6 @@ gulp.task("copy", function () {
       "source/fonts/**/*.{woff,woff2}",
       "source/libs/css/*.css",
       "source/img/**",
-      "source/js/**",
       "source/*.ico"
     ], {
     base: "source"
