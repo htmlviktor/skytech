@@ -7,6 +7,12 @@
         &:nth-child(1) {
             margin-left: 0;
         }
+        &:nth-child(2) {
+            .navigation__link {
+                font-weight: bold;
+                color: #00dfc8;
+            }
+        }
     }
 
 }

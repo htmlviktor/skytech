@@ -151,6 +151,28 @@
     display: block;
 }
 
+
+.param_inside_row {
+    border-bottom: 1px solid #f2f4f6;
+    padding: 8px 0;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.param_inside_name {
+    color: #848f9f;
+    font-size: 12px;
+    display: block;
+}
+
+.param_inside_value {
+    color: #2f3640;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 @media (max-width: $laptop-width) {
     .card-main__wrapper {
         flex-direction: column-reverse;
