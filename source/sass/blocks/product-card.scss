@@ -5,6 +5,7 @@
   position: relative;
   padding: 15px;
   transition: all 0.3s ease-in-out;
+  flex-grow: 1;
   &:hover {
     .card__link-container {
       opacity: 1;
@@ -46,6 +47,7 @@
 
 .card__title {
   margin: 0;
+  max-width: 90%;
 }
 
 .card__price {
@@ -56,6 +58,7 @@
   margin-bottom: 10px;
   height: 180px;
   display: flex;
+  align-items: center;
 }
 
 .card__link-container {
@@ -106,10 +109,12 @@
 .card__image {
   display: block;
   margin: 0 auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 .card__info {
-  margin-top: auto;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -119,6 +124,7 @@
     background: none;
     opacity: 1;
     height: auto;
+    margin-top: auto;
   }
   .card__more {
     display: block;
