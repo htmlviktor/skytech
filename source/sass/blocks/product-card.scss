@@ -104,6 +104,8 @@
 .card__price {
   font-size: 16px;
   color: #8a95a4;
+
+  margin-top: auto;
 }
 
 .card__image {
@@ -116,6 +118,10 @@
 .card__info {
   margin-top: 10px;
   position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 @media (max-width: $laptop-width) {
