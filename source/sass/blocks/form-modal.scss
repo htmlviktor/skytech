@@ -138,6 +138,9 @@
 }
 
 @media (max-width: $tablet-width) {
+  .form-modal-done {
+    padding: 60px;
+  }
   .form-modal-wrapper {
     width: 100%;
   }
