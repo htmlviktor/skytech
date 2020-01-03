@@ -99,8 +99,26 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: all 0.2s;
+  position: relative;
   &:hover {
     transform: scale(1.2);
+  }
+  &--yes {
+    &::after {
+      content: "";
+      position: absolute;
+      font-size: 12px;
+      top: 5px;
+      right: 0;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid white;
+      background: #00dfc8;
+      color: white;
+      z-index: 1;
+    }
   }
 }
 
