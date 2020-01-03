@@ -1,4 +1,4 @@
-<div class="overlay">
+<div class="overlay overlay--form-modal">
     <div class="form-modal-wrapper">
         <div class="form-modal__background"></div>
         <form action="" class="form-modal form-modal__main">
@@ -16,7 +16,14 @@
             </div>
             <button type="submit" class="form-modal__submit button">Отправить</button>
         </form>
-        <button class="form-modal__close">
+        <button class="form-modal__close form-modal__close--main">
+            <span class="visually-hidden">Закрыть</span>
+        </button>
+    </div>
+    <div class="form-modal-done">
+        <h2 class="form-modal-done__title sub-title">Спасибо за вашу заявку!</h2>
+        <p class="form-modal-done__text">Наши менеджеры свяжутся с вами в ближейшее время.</p>
+        <button class="form-modal__close form-modal__close--done">
             <span class="visually-hidden">Закрыть</span>
         </button>
     </div>

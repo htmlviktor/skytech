@@ -66,6 +66,10 @@
   display: none; // переключать на flex
   justify-content: center;
   align-items: center;
+
+  &--show {
+    display: flex;
+  }
 }
 
 .form-modal-wrapper {
@@ -103,6 +107,15 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
+}
+
+.form-modal-done {
+  background: white;
+  text-align: center;
+  padding: 100px;
+  position: relative;
+
+  display: none;
 }
 
 @media (max-width: $desktop-width) {
