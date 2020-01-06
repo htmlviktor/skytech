@@ -12,8 +12,8 @@
 }
 
 .modal-category__item {
-    margin-right: 50px;
-    margin-bottom: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .modal-category__title {
@@ -23,17 +23,30 @@
 
 .modal-category__list {
   @include reset-list;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  li:first-child {
+    .modal-category__sub-link {
+      font-size: 16px;
+      line-height: 2;
+      margin-top: 0;
+      margin-bottom: 10px;
+      display: block;
+      font-weight: 700;
+    }
+  }
 }
 
 .modal-category__sub-link {
   font-size: 14px;
   line-height: 2;
+  
 }
 
 @media (max-width: $laptop-width) {
-    .modal-category {
-        width: 128%;
-        left: 100%;
-        background: #f2f4f6;
-    }
+  .modal-category {
+    width: 128%;
+    left: 100%;
+    background: #f2f4f6;
+  }
 }
