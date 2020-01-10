@@ -11,3 +11,33 @@
         padding-left: 20px;
     }
 }
+
+#web_search_ajax_helper {
+    background: white;
+}
+
+.search-helper-row {
+    display: flex;
+}
+
+.search-helper_img {
+    width: 100px;
+}
+
+.search-helper_t {
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.search-helper_price {
+    width: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px; 
+}
+
+.search-helper_show-all {
+    display: inline-block;
+    padding: 10px;
+}

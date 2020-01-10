@@ -43,6 +43,12 @@
   
 }
 
+@media (max-width: $desktop-width) {
+  .modal-category {
+    top: 48px;
+  }
+}
+
 @media (max-width: $laptop-width) {
   .modal-category {
     width: 128%;
