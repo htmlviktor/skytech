@@ -78,3 +78,8 @@ img {
     max-width: $mobile-width-container;
   }
 }
+
+.search-helper_show-all {
+  cursor: pointer;
+  text-decoration: underline;
+}
