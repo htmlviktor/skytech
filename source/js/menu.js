@@ -20,6 +20,7 @@ const initMenu = () => {
         categoryMenu.slideToggle();
         $('.categories-menu__tablet-wrap').toggleClass('categories-menu__tablet-wrap--open');
     })
+
     
 };
 
