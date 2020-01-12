@@ -47,6 +47,21 @@ export default class CardPage {
         const cardMainList = $('.card-main__character-list');
         const cardMainTable = $('.card-main__character-table');
 
+        const inputFileElement = $('.form-promo__input--file');
+
+        inputFileElement.change(function() {
+            if ($(this).val()) {
+                $('.form-promo__file-input').text($(this).val());
+                $('.form-promo__file-formats').text('');
+                $('.form-promo__wrapper--file').css('border', '1px solid #00dfc8');
+            } else {
+                $('.form-promo__file-input').text('Прикрепить файл');
+                $('.form-promo__file-formats').text('jpg, png, pdf');
+                $('.form-promo__wrapper--file').css('border', '1px dashed #00dfc8');
+            }
+        })
+
+        
         cardMainTitle.click(() => {
             cardMainTitle.toggleClass('card-main__character-title--active');
             cardMainTable.toggleClass('card-main__character--active-display');
