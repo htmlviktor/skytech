@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 export default class FavoritesPage {
     constructor() {
-        this._cards = JSON.parse(localStorage.getItem('favorites'));
+        this._cards = localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : [];
     }
 
     init() {
