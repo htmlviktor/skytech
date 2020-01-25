@@ -1,5 +1,6 @@
 import initMenu from './menu.js';
 import Modals from './modals.js';
+import lozad from 'lozad';
 
 import IndexPage from './pages/index-page.js';
 import CardPage from './pages/card-page.js';
@@ -27,3 +28,7 @@ modalsInit.init();
 initMenu();
 
 favorites.init();
+
+const observer = lozad();
+
+observer.observe();

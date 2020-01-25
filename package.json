@@ -41,6 +41,7 @@
   },
   "version": "16.0.0",
   "dependencies": {
+    "lozad": "^1.14.0",
     "swiper": "^5.2.0"
   }
 }
