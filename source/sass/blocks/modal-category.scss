@@ -19,8 +19,9 @@
 
       &>.inner-category__item {
         flex-grow: 1;
-        width: calc(25% - 20px);
+        width: calc(33% - 20px);
         margin-right: 20px;
+        margin-bottom: 20px;
 
         &>.modal-category__sub-link {
           font-size: 16px;
@@ -49,8 +50,8 @@
 
 .modal-category__list {
   @include reset-list;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  // margin-right: 50px;
+  // margin-bottom: 50px;
 
   // li:first-child {
   //   &>.modal-category__sub-link {
