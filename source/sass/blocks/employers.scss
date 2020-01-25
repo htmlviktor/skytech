@@ -31,7 +31,8 @@
 
 .employers__item {
   display: flex;
-  height: 140px;
+  min-height: 140px;
+  max-height: 150px;
   padding: 3px;
   box-shadow: 0 2px 35px -21px rgba(0, 0, 0, 1);
   position: relative;
