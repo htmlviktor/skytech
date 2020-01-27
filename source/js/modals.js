@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import mask from 'jquery-mask-plugin';
 
 export default class Modals {
     constructor() {
@@ -7,6 +8,9 @@ export default class Modals {
     }
     init() {
         this._initializeModalForBuy();
+        $('[name="user_tel"]').mask('+38(000)-00-00-000', {
+            placeholder: "+38(___)-__-__-___"
+        });
     }
 
     _initializeModalForBuy() {
