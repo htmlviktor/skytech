@@ -103,7 +103,7 @@ gulp.task("compress", function() {
       rules: [
         {
           test: /\.(js)$/,
-          exclude: /(node_modules)/,
+          // exclude: /(node_modules)/,
           loader: 'babel-loader',
           query: {
             presets: ['@babel/preset-env']
@@ -115,7 +115,7 @@ gulp.task("compress", function() {
       jquery: 'jQuery'
     }
   }))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest("build/js"))
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
