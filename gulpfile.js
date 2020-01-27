@@ -115,7 +115,7 @@ gulp.task("compress", function() {
       jquery: 'jQuery'
     }
   }))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest("build/js"))
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
