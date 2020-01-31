@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import {submitHandler} from './APImodal';
 
 export default class Modals {
     constructor() {
@@ -10,9 +11,14 @@ export default class Modals {
     }
 
     _initializeModalForBuy() {
+        const susscb = this._onFormSubmit;
+
         $('.card--buy-js').click(this._onModalShow);
         $('.form-modal__close--main').click(this._onModalRemove);
-        $('.form-modal').submit(this._onFormSubmit);
+        $('.form-modal').on('submit', function(evt) {
+            evt.preventDefault();
+            submitHandler(this.id, susscb);
+        })
         $('.form-modal__close--done').click(this._onModalRemove);
     }
 
@@ -33,8 +39,7 @@ export default class Modals {
         $('.form-modal-wrapper').fadeIn();
     }
     
-    _onFormSubmit(evt) {
-        evt.preventDefault();
+    _onFormSubmit() {
         this.modalRemove();
     }
 }

@@ -1,31 +1,45 @@
-const APIinit = () => {
-    let form = document.querySelectorAll('form');
-    form = Array.from(form);
-    for (let i = 0; i < form.length; i++) {
+import $ from 'jquery';
 
-        if (form[i].id.indexOf('Form') >= 0) {
-
-            form[i].addEventListener('submit', function (evt) {
-                console.log(form[i])
-                evt.preventDefault();
-                submitHandler(form[i]);
-
-            });
-
-        }
-
-    }
-
-    async function submitHandler(form) {
-
-        let response = await fetch("send-mail.php", {
-            method: "POST",
-            body: new FormData(form)
-        })
-            .then(response => response.json())
-            .then(function (json) { form.reset(); console.log(json) })
-            .catch(function (error) { console.log(error) });
-    };
+const degaultSuccesHandler = () => {
+    $('.form-modal-wrapper').hide();
+    $('.overlay--form-modal').addClass('overlay--show');
+    $('.form-modal-done').show();
 }
 
-export default APIinit;
+function submitHandler(formId, successHandler = degaultSuccesHandler, errorHandler) {
+    $.ajax({
+        url: "/send-mail.php", //url страницы (action_ajax_form.php)
+        type: "POST", //метод отправки
+        data: $('#' + formId).serialize(),  // Сеарилизуем объект
+        success: function (response) { //Данные отправлены успешно
+            document.getElementById(formId).reset();
+            successHandler(response);
+        },
+        error: function (response) { // Данные не отправлены
+            if (errorHandler) {
+                errorHandler()
+            } else {
+                throw new Error(response)
+            }
+        }
+    });
+}
+
+
+function formSubmit(selector) {
+    $(selector).on('submit', function(evt) {
+        evt.preventDefault();
+        submitHandler(this.id);
+    })
+}
+
+const ajaxInit = () => {
+    formSubmit('#contactForm');
+	formSubmit('#simpleForm');
+	// formSubmit('#modalOrderForm');
+	formSubmit('#promoFeedbackForm');
+	formSubmit('#promoOrderForm');
+	formSubmit('#subscribesForm');
+}
+
+export {submitHandler, ajaxInit};

@@ -14,25 +14,25 @@
   margin-right: 70px;
   padding-top: 60px;
 
-  &--nal {
+  &--1 {
     background-image: url("../img/payments/money.png");
     background-repeat: no-repeat;
     background-position: left top;
   }
 
-  &--beznal {
+  &--2 {
     background-image: url("../img/payments/credit-card.png");
     background-repeat: no-repeat;
     background-position: left top;
   }
 
-  &--pb {
+  &--3 {
     background-image: url("../img/payments/privat-bank.png");
     background-repeat: no-repeat;
     background-position: left 5px;
   }
 
-  &--np {
+  &--4 {
     background-image: url("../img/payments/nova-poshta.png");
     background-repeat: no-repeat;
     background-position: left top;
@@ -48,6 +48,9 @@
 .payments__item-description {
   color: #8a95a4;
   line-height: 1.31;
+  max-height: 70px;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 
 .payments__item-description-hidden {

@@ -37,17 +37,17 @@
     background-repeat: no-repeat;
   }
 
-  &--time::after {
+  &--1::after {
     background-image: url("../img/sprite/stock.svg");
   }
 
-  &--quality::after {
+  &--2::after {
     background-image: url("../img/sprite/shield.svg");
   }
-  &--sales::after {
+  &--3::after {
     background-image: url("../img/sprite/history.svg");
   }
-  &--feedback::after {
+  &--4::after {
     background-image: url("../img/sprite/chat.svg");
   }
 }

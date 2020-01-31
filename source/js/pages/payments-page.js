@@ -7,15 +7,19 @@ export default class PaymentsPage {
 
     _initialDom() {
         $('.payments__item-description-more')
-            .click(function() {
+            .click(function () {
                 if ($(this).text() === 'Подробнее') {
                     $(this).text('Скрыть');
+                    $(this)
+                        .prev()
+                        .css('max-height', '200px');
                 } else {
                     $(this).text('Подробнее');
+                    $(this)
+                        .prev()
+                        .css('max-height', '70px');
                 }
-                $(this)
-                .prev()
-                .toggle(400);
-            });
+
+            })
     }
 }

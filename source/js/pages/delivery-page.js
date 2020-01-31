@@ -7,16 +7,19 @@ export default class DeliveryPage {
 
     _initialDom() {
         $('.main-delivery__more-text')
-            .click(function() {
+            .click(function () {
                 if ($(this).text() === 'Подробнее') {
                     $(this).text('Скрыть');
+                    $(this)
+                        .prev()
+                        .css('max-height', '200px');
                 } else {
                     $(this).text('Подробнее');
+                    $(this)
+                        .prev()
+                        .css('max-height', '90px');
                 }
-                $(this)
-                .prev()
-                .find('.main-delivery__item-text-hidden')
-                .slideToggle(400);
+
             })
     }
 }

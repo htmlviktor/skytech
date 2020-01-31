@@ -2,7 +2,6 @@ import initMenu from './menu.js';
 import Search from './search.js';
 import Modals from './modals.js';
 import lozad from 'lozad';
-import APIinit from './APImodal.js';
 
 import IndexPage from './pages/index-page.js';
 import CardPage from './pages/card-page.js';
@@ -11,6 +10,8 @@ import PaymentsPage from './pages/payments-page.js';
 import FavoritesPage from './pages/favorites-page.js';
 import Favorites from './favorites.js';
 import SearchPage from './pages/search-page.js'
+
+import {ajaxInit} from './APImodal';
 
 const favorites = new Favorites();
 const modalsInit = new Modals();
@@ -41,4 +42,5 @@ const observer = lozad();
 
 observer.observe();
 
-// APIinit();
+
+ajaxInit();
