@@ -6,6 +6,7 @@
   padding: 15px;
   transition: all 0.3s ease-in-out;
   flex-grow: 1;
+  width: 100%;
   &:hover {
     .card__link-container {
       opacity: 1;
