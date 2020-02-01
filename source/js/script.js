@@ -1,3 +1,5 @@
+import {polyfillInit} from './custom-polyfills.js';
+
 import initMenu from './menu.js';
 import Search from './search.js';
 import Modals from './modals.js';
@@ -13,6 +15,8 @@ import SearchPage from './pages/search-page.js'
 
 import {ajaxInit} from './APImodal';
 
+
+polyfillInit();
 const favorites = new Favorites();
 const modalsInit = new Modals();
 const searchModal = new Search();
