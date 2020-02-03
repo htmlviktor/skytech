@@ -1,4 +1,6 @@
-import {polyfillInit} from './custom-polyfills.js';
+import {
+  polyfillInit
+} from './custom-polyfills.js';
 
 import initMenu from './menu.js';
 import Search from './search.js';
@@ -13,7 +15,9 @@ import FavoritesPage from './pages/favorites-page.js';
 import Favorites from './favorites.js';
 import SearchPage from './pages/search-page.js'
 
-import {ajaxInit} from './APImodal';
+import {
+  ajaxInit
+} from './APImodal';
 
 
 polyfillInit();
