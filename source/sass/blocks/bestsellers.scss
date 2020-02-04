@@ -1,15 +1,18 @@
 .bestsellers {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .bestsellers__title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $desktop-width) {
+    padding: 30px 0;
+  }
 }
 
 .bestsellers__slider-wrapper {
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .bestsellers__slider {
