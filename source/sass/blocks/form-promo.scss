@@ -25,6 +25,7 @@
 .form-promo__wrapper {
   margin-bottom: 15px;
   &--file {
+    position: relative;
     border: 1px dashed #00dfc8;
     border-radius: 4px;
     height: 55px;
