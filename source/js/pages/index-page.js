@@ -118,7 +118,7 @@ export default class IndexPage {
                     spaceBetween: -80,
                 },
                 1100: {
-                    spaceBetween: -40,
+                    spaceBetween: 0,
                 },
                 1400: {
                     spaceBetween: -80,

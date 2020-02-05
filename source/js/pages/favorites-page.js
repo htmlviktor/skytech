@@ -26,16 +26,16 @@ export default class FavoritesPage {
         });
     }
 
-    getTemplate({title, image}) {
+    getTemplate({title, image, price, url}) {
         return `<li class="favorites__item"><article class="card">
         <div class="card__wrapper-image">
             <img src="${image}" alt="" class="card__image">
         </div>
         <div class="card__info">
             <h3 class="card__title">
-                <a href="" class="card__title-link">${title}</a>
+                <a href="${url}" class="card__title-link">${title}</a>
             </h3>
-            <p class="card__price">от 1200 грн.</p>
+            <p class="card__price">${price}</p>
         </div>
         <span class="card__add-features">
             <svg width="16" height="16" viewBox="0 0 51.997 51.997" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +59,8 @@ export default class FavoritesPage {
             </svg>
         </span>
         <div class="card__link-container">
-            <a href="" class="card__more">Подробнее</a>
-            <a href="" class="card__more card__more--buy card--buy-js">Заказать</a>
+            <a href="${url}" class="card__more">Подробнее</a>
+            <a href="${url}" class="card__more card__more--buy card--buy-js">Заказать</a>
         </div>
     
     </article></li>`

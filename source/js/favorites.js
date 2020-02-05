@@ -15,12 +15,16 @@ export default class Favorites {
             const parent = $(this).parent(); 
             const title = parent.find('.card__title-link').text(); 
             const image = parent.find('.card__image').attr('src');
+
+            const price = parent.find('.card__price').text();
+            const url = parent.find('.card__title-link').attr('href');
     
+
             let arr = localStorage.favorites ? JSON.parse(localStorage.favorites) : [];
             
                 const index = arr.findIndex(card => card.title === title);
                 if (index === -1) {
-                    arr.push({title, image});
+                    arr.push({title, image, price, url});
                 } else {
                     arr = [...arr.slice(0, index), ...arr.slice(index + 1)];        
                 }
