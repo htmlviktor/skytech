@@ -18,13 +18,15 @@ export default class Favorites {
 
             const price = parent.find('.card__price').text();
             const url = parent.find('.card__title-link').attr('href');
+            const dataProductId = parent.attr('data-productid');
+            const dataProductName = parent.attr('data-productname');
     
 
             let arr = localStorage.favorites ? JSON.parse(localStorage.favorites) : [];
             
                 const index = arr.findIndex(card => card.title === title);
                 if (index === -1) {
-                    arr.push({title, image, price, url});
+                    arr.push({title, image, price, url, dataProductId, dataProductName});
                 } else {
                     arr = [...arr.slice(0, index), ...arr.slice(index + 1)];        
                 }

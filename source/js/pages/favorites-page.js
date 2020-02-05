@@ -26,8 +26,8 @@ export default class FavoritesPage {
         });
     }
 
-    getTemplate({title, image, price, url}) {
-        return `<li class="favorites__item"><article class="card">
+    getTemplate({title, image, price, url, dataProductId, dataProductName}) {
+        return `<li class="favorites__item"><article class="card" data-productid="${dataProductId}" data-productname="${dataProductName}">
         <div class="card__wrapper-image">
             <img src="${image}" alt="" class="card__image">
         </div>
