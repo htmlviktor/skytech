@@ -1,6 +1,7 @@
 .card-main__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 
@@ -14,6 +15,11 @@
   width: 40%;
   flex-grow: 1;
 }
+.card-main__product-id {
+    font-size: 12px;
+    font-weight: 500;
+    color: #848f9f;
+}
 
 .card-main__gallery {
   width: 50%;
@@ -22,6 +28,7 @@
 .card-main__title {
   font-size: 30px;
   color: #1a2026;
+  margin: 5px 0;
 }
 
 .card-main__character-title {

@@ -9,6 +9,16 @@
   box-shadow: 0 2px 26px -13px rgba(0, 0, 0, 0.5);
 
   flex-wrap: wrap;
+  .modal-category__sub-link {
+    &:hover {
+    color: #00dfc8;
+    transition: color .2s;
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+  }
 
   &>.inner-category {
     &__list {
@@ -19,7 +29,7 @@
 
       &>.inner-category__item {
         flex-grow: 1;
-        width: calc(33% - 20px);
+        width: calc(25% - 20px);
         margin-right: 20px;
         margin-bottom: 20px;
 
