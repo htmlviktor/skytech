@@ -1,5 +1,6 @@
 import {
-  polyfillInit
+  polyfillInit,
+  polyfillIntersection
 } from './custom-polyfills.js';
 
 import initMenu from './menu.js';
@@ -21,6 +22,7 @@ import {
 
 
 polyfillInit();
+polyfillIntersection();
 const favorites = new Favorites();
 const modalsInit = new Modals();
 const searchModal = new Search();
