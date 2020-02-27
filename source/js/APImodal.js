@@ -7,7 +7,6 @@ const degaultSuccesHandler = () => {
 }
 
 function submitHandler(formId, successHandler = degaultSuccesHandler, errorHandler) {
-
     let form = document.getElementById(formId.slice(1));
 
     let formData = new FormData(form);
@@ -20,8 +19,18 @@ function submitHandler(formId, successHandler = degaultSuccesHandler, errorHandl
         processData: false,
         cache: false,
         success: function (response) { //Данные отправлены успешно
+            if (formId === '#subscribesForm') {
+                successHandler(response);
+            } else {
+                const href = document.location.href;
+                const pattert = /\b(ru)\b/;
+                if (href.match(pattert)) {
+                    document.location.href = '/ru/spasibo-vasha-zayavka-prinyata.html';   
+                } else {
+                    document.location.href = '/ua/spasibo-vasha-zayavka-prinyata.html';   
+                }
+            }
             $(formId)[0].reset();
-            successHandler(response);
         },
         error: function (response) { // Данные не отправлены
             if (errorHandler) {

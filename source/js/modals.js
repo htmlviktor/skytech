@@ -19,9 +19,16 @@ export default class Modals {
             evt.preventDefault();
             $('.overlay--form-modal').addClass('overlay--show');
             $('.form-modal-wrapper').fadeIn();
+            
 
-            let productName = $(this).parents('.card').data('productname').trim();
-            $('#productName').val(productName);
+            if ($(this).parent('.card-main__price-wrapper').length) {
+                let productName = $(this).parents('.card-main__info').data('productname').trim();
+                $('#productName').val(productName);
+            } else {
+                let productName = $(this).parents('.card').data('productname').trim();
+                $('#productName').val(productName);
+            }
+
 
         });
 
